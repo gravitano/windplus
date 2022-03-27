@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="w-full bg-white shadow  py-3 px-4">
+    <div class="flex gap-4 justify-between container mx-auto">
+      <div class="font-bold text-blue-500">Tailwind</div>
+
+      <div class="space-x-2">
+        <a class="text-sm text-blue-500 font-semibold" href="#">Home</a>
+        <a class="text-sm text-gray-500" href="#">About</a>
+        <a class="text-sm text-gray-500" href="#">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- main -->
+  <main class="container mx-auto py-4">
+    <h1 class="font-semibold text-gray-800 mb-2">Hello World</h1>
+    <p class="text-gray-800 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit impedit aliquam cum
+      dolores
+      labore, deleniti saepe
+      modi nobis quos, ducimus voluptatibus! Laboriosam aspernatur doloremque soluta? Veniam, quis. Dolores, ex qui.</p>
+  </main>
+
+  <!-- footer -->
+  <footer class="container mx-auto text-sm text-gray-500 py-2">
+    Copyright &copy; 2022-Present
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
