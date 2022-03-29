@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* card */
+a {
+  @apply underline text-blue-500 hover:text-blue-500;
+}
+
+.card {
+  @apply rounded-md shadow;
+}
+
+.card-header {
+  @apply px-4 pt-3 font-semibold flex text-gray-800;
+}
+
+.card-body {
+  @apply px-4 py-3 flex flex-col text-gray-700;
+}
+
+.card-footer {
+  @apply px-4 pb-3 flex flex-row gap-2;
+}
+
+.card-bordered {
+  @apply border shadow-none;
+}
