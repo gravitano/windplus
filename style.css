@@ -12,7 +12,7 @@ a {
 }
 
 .card-header {
-  @apply px-4 pt-3 font-semibold flex text-gray-800;
+  @apply px-4 pt-3 font-semibold flex text-gray-800 items-center;
 }
 
 .card-body {
@@ -20,9 +20,130 @@ a {
 }
 
 .card-footer {
-  @apply px-4 pb-3 flex flex-row gap-2;
+  @apply px-4 pb-3 flex flex-row gap-2 items-center;
 }
 
 .card-bordered {
   @apply border shadow-none;
+}
+
+/* button */
+.btn {
+  @apply px-4 py-2 rounded-md border inline-flex appearance-none justify-center items-center gap-2 font-semibold transition duration-300;
+}
+
+.btn-default {
+  @apply border-gray-500 text-gray-700 hover:bg-gray-700 hover:border-gray-700 hover:text-white;
+}
+
+.btn-primary {
+  @apply bg-blue-500 border-blue-500 text-white hover:bg-blue-700 hover:border-blue-700 hover:text-white;
+}
+
+.btn-secondary {
+  @apply bg-pink-500 border-pink-500 text-white hover:bg-pink-700 hover:border-pink-700 hover:text-white;
+}
+
+.btn-info {
+  @apply bg-sky-500 border-sky-500 text-white hover:bg-sky-700 hover:border-sky-700 hover:text-white;
+}
+
+.btn-warning {
+  @apply bg-orange-500 border-orange-500 text-white hover:bg-orange-700 hover:border-orange-700 hover:text-white;
+}
+
+.btn-success {
+  @apply bg-emerald-500 border-emerald-500 text-white hover:bg-emerald-700 hover:border-emerald-700 hover:text-white;
+}
+
+.btn-error {
+  @apply bg-red-500 border-red-500 text-white hover:bg-red-700 hover:border-red-700 hover:text-white;
+}
+
+.btn-dark {
+  @apply bg-gray-800 border-gray-800 text-white hover:bg-gray-900 hover:border-gray-900 hover:text-white;
+}
+
+.btn-rounded {
+  @apply rounded-full;
+}
+
+.btn-outlined {
+  @apply bg-transparent;
+}
+
+.btn-outlined.btn-default {
+  @apply border-gray-500 text-gray-700 hover:bg-gray-700 hover:border-gray-700 hover:text-white;
+}
+
+.btn-outlined.btn-primary {
+  @apply border-blue-500 text-blue-500 hover:bg-blue-700 hover:border-blue-700 hover:text-white;
+}
+
+.btn-outlined.btn-secondary {
+  @apply border-pink-500 text-pink-500 hover:bg-pink-700 hover:border-pink-700 hover:text-white;
+}
+
+.btn-outlined.btn-info {
+  @apply border-sky-500 text-sky-500 hover:bg-sky-700 hover:border-sky-700 hover:text-white;
+}
+
+.btn-outlined.btn-warning {
+  @apply border-orange-500 text-orange-500 hover:bg-orange-700 hover:border-orange-700 hover:text-white;
+}
+
+.btn-outlined.btn-success {
+  @apply border-emerald-500 text-emerald-500 hover:bg-emerald-700 hover:border-emerald-700 hover:text-white;
+}
+
+.btn-outlined.btn-error {
+  @apply border-red-500 text-red-500 hover:bg-red-700 hover:border-red-700 hover:text-white;
+}
+
+.btn-outlined.btn-dark {
+  @apply border-gray-800 text-gray-800 hover:bg-gray-900 hover:border-gray-900 hover:text-white;
+}
+
+.btn-text {
+  @apply bg-transparent border-none hover:bg-transparent;
+}
+
+.btn-text.btn-default {
+  @apply text-gray-700 hover:text-gray-700;
+}
+
+.btn-text.btn-primary {
+  @apply text-blue-500 hover:text-blue-700;
+}
+
+.btn-text.btn-secondary {
+  @apply text-pink-500 hover:text-pink-700;
+}
+
+.btn-text.btn-info {
+  @apply text-sky-500 hover:text-sky-700;
+}
+
+.btn-text.btn-warning {
+  @apply text-orange-500 hover:text-orange-700;
+}
+
+.btn-text.btn-success {
+  @apply text-emerald-500 hover:text-emerald-700;
+}
+
+.btn-text.btn-error {
+  @apply text-red-500 hover:text-red-700;
+}
+
+.btn-text.btn-dark {
+  @apply text-gray-800 hover:text-gray-900;
+}
+
+.btn-sm {
+  @apply text-sm px-2 py-1;
+}
+
+.btn-lg {
+  @apply text-lg px-6 py-3;
 }
