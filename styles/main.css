@@ -1,6 +1,7 @@
 @import './tailwind.css';
 @import './button.css';
 @import './card.css';
+@import './form.css';
 
 /* hyperlink */
 a {

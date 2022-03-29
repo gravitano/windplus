@@ -1,0 +1,24 @@
+/* forms */
+.form-inline .form-group {
+  @apply flex-row items-start;
+}
+
+.form-group {
+  @apply flex gap-2 flex-col items-start mb-5 last-of-type:mb-0;
+}
+
+.form-group-inline {
+  @apply flex-row;
+}
+
+.form-label {
+  @apply flex w-full;
+}
+
+.form-input {
+  @apply flex w-full border-gray-300 rounded-md transition duration-300 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50;
+}
+
+.form-input-error {
+  @apply focus:border-red-500 focus:ring-red-500 focus:ring-opacity-50;
+}
