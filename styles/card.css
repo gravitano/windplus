@@ -18,3 +18,11 @@
 .card-bordered {
   @apply border shadow-none;
 }
+
+.card-bordered .card-header {
+  @apply pb-3 border-b;
+}
+
+.card-bordered .card-footer {
+  @apply pt-3 border-t;
+}
