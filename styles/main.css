@@ -1,0 +1,8 @@
+@import './tailwind.css';
+@import './button.css';
+@import './card.css';
+
+/* hyperlink */
+a {
+  @apply underline text-blue-500 hover:text-blue-500 hover:no-underline;
+}
