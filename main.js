@@ -8,7 +8,7 @@ const app = createApp({})
 
 app.component('AppHeader', {
   template: `
-  <header class="w-full bg-white border-b py-3 px-4 sticky top-0">
+  <header class="w-full bg-white border-b py-3 px-4 sticky top-0 z-10">
     <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-between items-center container mx-auto">
       <a href="/" class="font-bold text-blue-500 text-lg">
         Tailwind Components
