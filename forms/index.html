@@ -12,80 +12,69 @@
 <body>
 
   <div id="app">
-    <!-- header -->
-    <app-header></app-header>
+    <app-layout>
+      <div class="mb-5 space-y-0.5">
+        <h1 class="font-bold text-2xl text-gray-800">Forms</h1>
+        <p class="text-lg text-gray-500">Form Component</p>
+      </div>
 
-    <!-- main -->
-    <div class="flex py-4 gap-6 container mx-auto">
-      <app-sidebar></app-sidebar>
-
-      <main class="w-full">
-        <div class="mb-5 space-y-0.5">
-          <h1 class="font-bold text-2xl text-gray-800">Forms</h1>
-          <p class="text-lg text-gray-500">Form Component</p>
+      <div class="card card-bordered">
+        <div class="card-header">
+          Forms
         </div>
-
-        <div class="card card-bordered">
-          <div class="card-header">
-            Forms
+        <form class="">
+          <div class="card-body">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input id="name" type="text" placeholder="Name" class="form-input" />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" type="text" placeholder="Email" class="form-input form-input-error" />
+            </div>
+            <div class="form-group">
+              <label for="age" class="form-label">Age</label>
+              <input id="age" type="number" placeholder="Age" class="form-input w-full sm:w-2/12" />
+            </div>
+            <div class="form-group">
+              <label for="password" class="form-label">Password</label>
+              <input id="password" type="password" placeholder="Password" class="form-input" />
+            </div>
+            <div class="form-group">
+              <label for="sex" class="form-label">Gender</label>
+              <div class="w-full flex gap-4">
+                <label class="flex gap-2 items-center">
+                  <input name="sex" value="male" type="radio" />
+                  Male
+                </label>
+                <label class="flex gap-2 items-center">
+                  <input name="sex" value="female" type="radio" />
+                  Female
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="interest" class="form-label">Interest</label>
+              <select id="interest" name="interest" class="form-input">
+                <option value="">Select</option>
+                <option>Backend</option>
+                <option>Frontend</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="address" class="form-label">Address</label>
+              <textarea id="address" class="form-input" placeholder="Your Address"></textarea>
+            </div>
           </div>
-          <form class="">
-            <div class="card-body">
-              <div class="form-group">
-                <label for="name" class="form-label">Name</label>
-                <input id="name" type="text" placeholder="Name" class="form-input" />
-              </div>
-              <div class="form-group">
-                <label for="email" class="form-label">Email</label>
-                <input id="email" type="text" placeholder="Email" class="form-input form-input-error" />
-              </div>
-              <div class="form-group">
-                <label for="age" class="form-label">Age</label>
-                <input id="age" type="number" placeholder="Age" class="form-input w-full sm:w-2/12" />
-              </div>
-              <div class="form-group">
-                <label for="password" class="form-label">Password</label>
-                <input id="password" type="password" placeholder="Password" class="form-input" />
-              </div>
-              <div class="form-group">
-                <label for="sex" class="form-label">Gender</label>
-                <div class="w-full flex gap-4">
-                  <label class="flex gap-2 items-center">
-                    <input name="sex" value="male" type="radio" />
-                    Male
-                  </label>
-                  <label class="flex gap-2 items-center">
-                    <input name="sex" value="female" type="radio" />
-                    Female
-                  </label>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="interest" class="form-label">Interest</label>
-                <select id="interest" name="interest" class="form-input">
-                  <option value="">Select</option>
-                  <option>Backend</option>
-                  <option>Frontend</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="address" class="form-label">Address</label>
-                <textarea id="address" class="form-input" placeholder="Your Address"></textarea>
-              </div>
-            </div>
 
-            <div class="card-footer bg-gray-100">
-              <button class="btn btn-primary">Submit</button>
-              <button class="btn btn-text btn-default">Cancel</button>
-            </div>
-          </form>
+          <div class="card-footer bg-gray-100">
+            <button class="btn btn-primary">Submit</button>
+            <button class="btn btn-text btn-default">Cancel</button>
+          </div>
+        </form>
 
-        </div>
-      </main>
-    </div>
-
-    <!-- footer -->
-    <app-footer></app-footer>
+      </div>
+    </app-layout>
   </div>
 
   <script type="module" src="/main.js"></script>

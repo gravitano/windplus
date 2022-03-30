@@ -12,56 +12,44 @@
 <body>
 
   <div id="app">
-    <!-- header -->
-    <app-header></app-header>
+    <app-layout>
+      <div class="mb-5 space-y-0.5">
+        <h1 class="font-bold text-2xl text-gray-800">Cards</h1>
+        <p class="text-lg text-gray-500">Card Component</p>
+      </div>
 
-    <!-- main -->
-    <div class="flex py-4 gap-6 container mx-auto">
-      <app-sidebar></app-sidebar>
-
-      <main class="w-full">
-        <div class="mb-5 space-y-0.5">
-          <h1 class="font-bold text-2xl text-gray-800">Cards</h1>
-          <p class="text-lg text-gray-500">Card Component</p>
+      <div class="card mb-5">
+        <div class="card-header">
+          Card
         </div>
-
-        <div class="card mb-5">
-          <div class="card-header">
-            Card
-          </div>
-          <div class="card-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, est facere! Laboriosam praesentium impedit
-            illum aliquam dolorum quisquam temporibus vel accusamus dignissimos autem, amet reprehenderit soluta neque,
-            qui
-            sequi fugit.
-          </div>
-          <div class="card-footer">
-            <a href="#">Hyperlink</a>
-            <button class="btn btn-default">Button</button>
-          </div>
+        <div class="card-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, est facere! Laboriosam praesentium impedit
+          illum aliquam dolorum quisquam temporibus vel accusamus dignissimos autem, amet reprehenderit soluta neque,
+          qui
+          sequi fugit.
         </div>
-
-        <div class="card card-bordered mb-5">
-          <div class="card-header">
-            Card Bordered
-          </div>
-          <div class="card-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, est facere! Laboriosam praesentium impedit
-            illum aliquam dolorum quisquam temporibus vel accusamus dignissimos autem, amet reprehenderit soluta neque,
-            qui
-            sequi fugit.
-          </div>
-          <div class="card-footer">
-            <a href="#">Hyperlink</a>
-            <button class="btn btn-default">Button</button>
-          </div>
+        <div class="card-footer">
+          <a href="#">Hyperlink</a>
+          <button class="btn btn-default">Button</button>
         </div>
+      </div>
 
-      </main>
-    </div>
-
-    <!-- footer -->
-    <app-footer></app-footer>
+      <div class="card card-bordered mb-5">
+        <div class="card-header">
+          Card Bordered
+        </div>
+        <div class="card-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, est facere! Laboriosam praesentium impedit
+          illum aliquam dolorum quisquam temporibus vel accusamus dignissimos autem, amet reprehenderit soluta neque,
+          qui
+          sequi fugit.
+        </div>
+        <div class="card-footer">
+          <a href="#">Hyperlink</a>
+          <button class="btn btn-default">Button</button>
+        </div>
+      </div>
+    </app-layout>
   </div>
 
   <script type="module" src="/main.js"></script>
