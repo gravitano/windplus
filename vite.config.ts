@@ -1,12 +1,12 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
-// import { fileURLToPath, URL } from 'url';
+import { fileURLToPath, URL } from 'url';
 
 export default defineConfig({
   resolve: {
     alias: {
-      // vue: 'vue/dist/vue.esm-bundler.js',
-      // '@': fileURLToPath(new URL('./', import.meta.url)),
+      vue: 'vue/dist/vue.esm-bundler.js',
+      '@': fileURLToPath(new URL('./', import.meta.url)),
     },
   },
   build: {
