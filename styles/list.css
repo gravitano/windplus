@@ -6,6 +6,10 @@
   @apply text-gray-500 flex gap-1 items-center;
 }
 
+.list-item-header {
+  @apply bg-gray-100 px-2 py-1.5 text-sm border-b text-gray-500 font-semibold;
+}
+
 /* list small variant */
 .list.list-sm .list-item {
   @apply text-sm;
@@ -23,18 +27,10 @@
 
 /* list item */
 .list-item {
-  @apply appearance-none transition duration-300 flex w-full gap-2 px-3 py-2 rounded-md text-gray-700;
+  @apply appearance-none transition duration-300 flex w-full px-3 py-2 rounded-md text-gray-700;
 }
 
-.list-item-primary,
-.list-item.primary {
-  @apply text-white bg-primary-500 border-primary-500 hover:bg-primary-600 hover:border-primary-500;
-}
-
-.list-item-secondary,
-.list-item.secondary {
-  @apply text-white bg-secondary-500 border-secondary-500 hover:bg-primary-600 hover:border-primary-500;
-}
+/* list item state */
 
 .list-item:not(:disabled),
 .list-item:not(.disabled),
@@ -51,6 +47,37 @@
 .list-item.active,
 .list-item.list-item-active {
   @apply bg-primary-500 text-white hover:!bg-primary-600 hover:!text-white;
+}
+
+/* color variants */
+.list-item-primary,
+.list-item.primary {
+  @apply text-white bg-primary-500 border-primary-500 hover:bg-primary-600 hover:border-primary-500 hover:text-white;
+}
+
+.list-item-secondary,
+.list-item.secondary {
+  @apply text-white bg-secondary-500 border-secondary-500 hover:bg-secondary-600 hover:border-secondary-500 hover:text-white;
+}
+
+.list-item-info,
+.list-item.info {
+  @apply text-white bg-info-500 border-info-500 hover:bg-info-600 hover:border-info-500 hover:text-white;
+}
+
+.list-item-warning,
+.list-item.warning {
+  @apply text-white bg-warning-500 border-warning-500 hover:bg-warning-600 hover:border-warning-500 hover:text-white;
+}
+
+.list-item-success,
+.list-item.success {
+  @apply text-white bg-success-500 border-success-500 hover:bg-success-600 hover:border-success-500 hover:text-white;
+}
+
+.list-item-error,
+.list-item.error {
+  @apply text-white bg-error-500 border-error-500 hover:bg-error-600 hover:border-error-500 hover:text-white;
 }
 
 a.list-item {
@@ -107,4 +134,36 @@ a.list-item {
 /* size */
 .list-dense .list-item {
   @apply px-2 py-1;
+}
+
+/* media content */
+.list-item-media {
+}
+
+.list-item-content {
+  @apply flex flex-col flex-grow;
+}
+
+.list-item-title {
+  @apply font-semibold;
+}
+
+.list-item-subtitle {
+  @apply text-gray-600 text-sm;
+}
+
+.list-item-body {
+  @apply text-gray-800;
+}
+
+.list-item-subheader {
+  @apply text-xs font-normal text-gray-400;
+}
+
+.list-item-action {
+  @apply flex gap-2 items-center;
+}
+
+.list-footer {
+  @apply px-4 py-2;
 }

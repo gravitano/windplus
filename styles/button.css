@@ -126,3 +126,11 @@
 .btn-lg {
   @apply text-lg px-6 py-3;
 }
+
+.btn-block {
+  @apply w-full;
+}
+
+.btn-icon {
+  @apply px-1 border-none w-10 h-10 rounded-full;
+}

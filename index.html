@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <title>Tailwind Components</title>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
@@ -13,8 +13,8 @@
   <!-- header -->
   <header class="w-full bg-white shadow py-3 px-4">
     <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-between items-center container mx-auto">
-      <a href="#" class="font-bold text-blue-500 text-lg">
-        Tailwind Vanilla
+      <a href="/" class="font-bold text-blue-500 text-lg">
+        Tailwind Components
       </a>
 
       <div class="space-x-0">
@@ -38,25 +38,27 @@
       </button>
       <ul class="list list-dense list-hover list-sm list-inline list-tree ml-2">
         <li>
-          <a href="#" class="list-item">Alerts</a>
+          <a href="/alerts/" class="list-item active">Alerts</a>
         </li>
         <li>
-          <a href="#" class="list-item">Card</a>
+          <a href="/cards/" class="list-item">Card</a>
         </li>
         <li>
-          <a href="#" class="list-item">Button</a>
+          <a href="/buttons/" class="list-item">Button</a>
         </li>
         <li>
-          <a href="#" class="list-item">Form</a>
+          <a href="/forms/" class="list-item">Form</a>
         </li>
         <li>
-          <a href="#" class="list-item">List</a>
+          <a href="/lists/" class="list-item">List</a>
         </li>
       </ul>
     </div>
     <div class="w-full sm:w-9/12">
-      <!-- alerts -->
-      <h2 class="font-bold mb-2 text-gray-800">Alerts</h2>
+      <div class="mb-5 space-y-0.5">
+        <h1 class="font-bold text-2xl text-gray-800">Buttons</h1>
+        <p class="text-lg text-gray-500">Button Component</p>
+      </div>
 
       <h2 class="font-bold mb-2 text-gray-800">Alert Variants</h2>
       <div class="space-y-2 mb-5">
@@ -655,7 +657,7 @@
 
   <!-- footer -->
   <footer class="container mx-auto text-sm text-gray-500 py-2">
-    Copyright &copy; 2022-Present
+    Copyright &copy; 2022-Present &middot; <a href="https://github.com/gravitano">Warsono</a>
   </footer>
 
   <script type="module" src="/main.js"></script>
