@@ -1,0 +1,110 @@
+.list {
+  @apply rounded-md mb-4;
+}
+
+.list-header {
+  @apply text-gray-500 flex gap-1 items-center;
+}
+
+/* list small variant */
+.list.list-sm .list-item {
+  @apply text-sm;
+}
+
+/* list inline variant */
+.list.list-inline .list-item {
+  @apply inline-flex w-auto;
+}
+
+/* list tree variant */
+.list.list-tree {
+  @apply border-l rounded-none px-2;
+}
+
+/* list item */
+.list-item {
+  @apply appearance-none transition duration-300 flex w-full gap-2 px-3 py-2 rounded-md text-gray-700;
+}
+
+.list-item-primary,
+.list-item.primary {
+  @apply text-white bg-primary-500 border-primary-500 hover:bg-primary-600 hover:border-primary-500;
+}
+
+.list-item-secondary,
+.list-item.secondary {
+  @apply text-white bg-secondary-500 border-secondary-500 hover:bg-primary-600 hover:border-primary-500;
+}
+
+.list-item:not(:disabled),
+.list-item:not(.disabled),
+.list-item:not(.active) {
+  @apply hover:text-gray-800;
+}
+
+.list-item:disabled,
+.list-item.disabled,
+.list-item.list-item-disabled {
+  @apply text-gray-400 cursor-not-allowed hover:bg-transparent hover:text-gray-400;
+}
+
+.list-item.active,
+.list-item.list-item-active {
+  @apply bg-primary-500 text-white hover:!bg-primary-600 hover:!text-white;
+}
+
+a.list-item {
+  @apply hover:text-gray-800 no-underline hover:no-underline;
+}
+
+.list-hover .list-item:not(:disabled):hover,
+.list-hover .list-item:not(.active):hover,
+.list-hover .list-item:not(.list-item-active):hover,
+.list-hover .list-item:not(.list-item-disabled):hover,
+.list-hover .list-item:not(.disabled):hover {
+  @apply bg-gray-100;
+}
+
+/* bordered */
+.list-bordered {
+  @apply border;
+}
+
+.list-bordered .list-item {
+  @apply rounded-none;
+}
+
+.list-bordered .list-item:first-of-type {
+  @apply rounded-t-md;
+}
+
+.list-bordered .list-item:last-of-type {
+  @apply rounded-b-md;
+}
+
+.list-bordered .list-item:not(:last-of-type) {
+  @apply border-b;
+}
+
+/* flush */
+.list-flush {
+  @apply border-transparent;
+}
+
+.list-flush .list-item {
+  @apply rounded-none;
+}
+
+.list-flush .list-item:not(:last-of-type) {
+  @apply border-b;
+}
+
+/* text */
+.list-text .list-item {
+  @apply px-2 py-1;
+}
+
+/* size */
+.list-dense .list-item {
+  @apply px-2 py-1;
+}
