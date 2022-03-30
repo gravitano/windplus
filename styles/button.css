@@ -132,5 +132,17 @@
 }
 
 .btn-icon {
-  @apply px-1 border-none w-10 h-10 rounded-full;
+  @apply px-1 w-[42px] h-[42px] rounded-full;
+}
+
+.btn-icon.btn-sm {
+  @apply w-[30px] h-[30px];
+}
+
+.btn-icon.btn-lg {
+  @apply w-[54px] h-[54px];
+}
+
+.btn-link {
+  @apply p-0;
 }
