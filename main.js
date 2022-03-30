@@ -1,5 +1,5 @@
 import './styles/main.css'
-import {createApp} from 'vue'
+import {createApp, ref} from 'vue'
 
 window.__VUE_OPTIONS_API__ = true
 window.__VUE_PROD_DEVTOOLS__ = false
@@ -26,6 +26,35 @@ app.component('AppHeader', {
 })
 
 app.component('AppSidebar', {
+  setup() {
+    const menus = ref([
+      {
+        title: 'Alerts',
+        path: '/alerts/'
+      },
+      {
+        title: 'Buttons',
+        path: '/buttons/'
+      },
+      {
+        title: 'Cards',
+        path: '/cards/'
+      },
+      {
+        title: 'Forms',
+        path: '/forms/'
+      },
+      {
+        title: 'Lists',
+        path: '/lists/'
+      },
+    ])
+    const currentPath = window.location.pathname
+    const activeClass = path => ({
+      active: currentPath === path
+    })
+    return {currentPath, activeClass, menus}
+  },
   template: `
     <aside class="h-screen sticky top-20 w-full sm:w-3/12">
       <button class="list-header text-xs uppercase mb-1">
@@ -36,20 +65,10 @@ app.component('AppSidebar', {
         Components
       </button>
       <ul class="list list-dense list-hover list-sm list-inline list-tree ml-2">
-        <li>
-          <a href="/alerts/" class="list-item active">Alerts</a>
-        </li>
-        <li>
-          <a href="/cards/" class="list-item">Card</a>
-        </li>
-        <li>
-          <a href="/buttons/" class="list-item">Button</a>
-        </li>
-        <li>
-          <a href="/forms/" class="list-item">Form</a>
-        </li>
-        <li>
-          <a href="/lists/" class="list-item">List</a>
+        <li v-for="menu in menus" :key="menu.title">
+          <a :href="menu.path" class="list-item" :class="activeClass(menu.path)">
+            {{ menu.title }}
+          </a>
         </li>
       </ul>
     </aside>
