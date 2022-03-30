@@ -6,7 +6,26 @@ window.__VUE_PROD_DEVTOOLS__ = false
 
 const app = createApp({})
 
+const activeClass = (path, classes = 'active', inactiveClass = 'inactive') => {
+  const currentPath = window.location.pathname
+  console.log({currentPath})
+  return currentPath === path ? classes : inactiveClass
+}
+
 app.component('AppHeader', {
+  setup() {
+    const menus = ref([
+      {
+        title: 'Home',
+        path: '/'
+      },
+      {
+        title: 'Docs',
+        path: '/alerts/'
+      },
+    ])
+    return {activeClass, menus}
+  },
   template: `
   <header class="w-full bg-white border-b py-3 px-4 sticky top-0 z-10">
     <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-between items-center container mx-auto">
@@ -15,8 +34,9 @@ app.component('AppHeader', {
       </a>
 
       <div class="space-x-0">
-        <a class="btn btn-text btn-primary" href="/">Home</a>
-        <a class="btn btn-text btn-default" href="/docs/">Docs</a>
+        <a v-for="menu in menus" :key="menu.title" class="btn btn-text" :class="activeClass(menu.path, 'btn-primary', 'btn-default')" :href="menu.path">
+          {{ menu.title }}
+        </a>
         <a class="btn btn-text btn-default" href="https://github.com/gravitano/vite-tailwind-vanilla" target="_blank"
           rel="noopener">GitHub</a>
       </div>
@@ -49,11 +69,7 @@ app.component('AppSidebar', {
         path: '/lists/'
       },
     ])
-    const currentPath = window.location.pathname
-    const activeClass = path => ({
-      active: currentPath === path
-    })
-    return {currentPath, activeClass, menus}
+    return {activeClass, menus}
   },
   template: `
     <aside class="h-screen sticky top-20 w-full sm:w-3/12">
@@ -77,10 +93,30 @@ app.component('AppSidebar', {
 
 app.component('AppFooter', {
   template: `
-    <footer class="container mx-auto text-sm text-gray-500 py-2">
+    <footer class="container mx-auto text-sm text-gray-500 py-3 flex justify-center border-t">
       Copyright &copy; 2022-Present &middot; <a href="https://github.com/gravitano">Warsono</a>
     </footer>
     `
+})
+
+app.component('app-layout', {
+  props: {
+    hideSidebar: Boolean,
+    fluid: Boolean
+  },
+  template: `
+  <app-header></app-header>
+
+  <div class="flex gap-6 mx-auto" :class="fluid ? '' : 'container py-4'">
+    <app-sidebar v-if="!hideSidebar"></app-sidebar>
+
+    <main class="w-full">
+      <slot></slot>
+    </main>
+  </div>
+
+  <app-footer></app-footer>
+  `
 })
 
 app.mount('#app')

@@ -1,6 +1,6 @@
 /* card */
 .card {
-  @apply rounded-md shadow;
+  @apply rounded-md shadow flex flex-col;
 }
 
 .card-header {
@@ -8,7 +8,7 @@
 }
 
 .card-body {
-  @apply px-4 py-3 flex flex-col text-gray-700;
+  @apply px-4 py-3 flex flex-col text-gray-700 flex-grow;
 }
 
 .card-footer {
@@ -19,10 +19,10 @@
   @apply border shadow-none;
 }
 
-.card-bordered .card-header {
+.card-bordered > .card-header {
   @apply pb-3 border-b;
 }
 
-.card-bordered .card-footer {
+.card-bordered > .card-footer {
   @apply pt-3 border-t;
 }

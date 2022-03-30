@@ -11,619 +11,141 @@
 
 <body>
   <div id="app">
-    <!-- header -->
-    <app-header></app-header>
-
-    <!-- main -->
-    <div class="flex py-4 gap-6 container mx-auto">
-      <app-sidebar></app-sidebar>
-
-      <main class="w-full">
-        <div class="mb-5 space-y-0.5">
-          <h1 class="font-bold text-2xl text-gray-800">Buttons</h1>
-          <p class="text-lg text-gray-500">Button Component</p>
+    <app-layout hide-sidebar fluid>
+      <div class="py-36 bg-gradient-to-tr from-primary-600 to-primary-400 text-center text-white">
+        <div class=" font-bold text-3xl mb-2">
+          Tailwind Components
         </div>
-
-        <h2 class="font-bold mb-2 text-gray-800">Alert Variants</h2>
-        <div class="space-y-2 mb-5">
-          <div class="alert alert-default">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-secondary">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-info">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-warning">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-error">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-success">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
+        <div class="">
+          Pre-built custom components for Tailwind CSS.
         </div>
+      </div>
 
-        <h2 class="font-bold mb-2 text-gray-800">Alert Dense</h2>
-        <div class="space-y-2 mb-5">
-          <div class="alert alert-dense alert-default">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-dense alert-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-dense alert-secondary">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-dense alert-info">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-dense alert-warning">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-dense alert-error">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-dense alert-success">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <h2 class="font-bold mb-2 text-gray-800">Alert Outlined</h2>
-        <div class="space-y-2 mb-5">
-          <div class="alert alert-outlined alert-default">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-outlined alert-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-outlined alert-secondary">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-outlined alert-info">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-outlined alert-warning">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-outlined alert-error">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-outlined alert-success">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <h2 class="font-bold mb-2 text-gray-800">Alert Border</h2>
-        <div class="space-y-2 mb-5">
-          <div class="alert alert-outlined !border-t-4 alert-default">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-outlined !border-t-4 alert-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-outlined !border-t-4 alert-secondary">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-outlined !border-t-4 alert-info">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-outlined !border-t-4 alert-warning">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-outlined !border-t-4 alert-error">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="alert alert-outlined !border-t-4 alert-success">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Please review your changes!
-            <div class="flex-grow"></div>
-            <button class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <div class="mb-5 card card-bordered">
-          <h1 class="font-semibold text-gray-800 card-header">Hello World</h1>
-          <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit impedit
-            aliquam cum
-            dolores
-            labore, deleniti saepe
-            modi nobis quos, ducimus voluptatibus! Laboriosam aspernatur doloremque soluta? Veniam, quis. Dolores, ex
-            qui.
-          </div>
-        </div>
-
-        <div class="card mb-5">
-          <div class="card-header">
-            Card
-          </div>
-          <div class="card-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, est facere! Laboriosam praesentium impedit
-            illum aliquam dolorum quisquam temporibus vel accusamus dignissimos autem, amet reprehenderit soluta neque,
-            qui
-            sequi fugit.
-          </div>
-          <div class="card-footer">
-            <a href="#">Hyperlink</a>
-            <button class="btn btn-default">Button</button>
-          </div>
-        </div>
-
-        <div class="card card-bordered mb-5">
-          <div class="card-header">
-            Card Bordered
-          </div>
-          <div class="card-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, est facere! Laboriosam praesentium impedit
-            illum aliquam dolorum quisquam temporibus vel accusamus dignissimos autem, amet reprehenderit soluta neque,
-            qui
-            sequi fugit.
-          </div>
-          <div class="card-footer">
-            <a href="#">Hyperlink</a>
-            <button class="btn btn-default">Button</button>
-          </div>
-        </div>
-
-        <div class="card card-bordered mb-5">
-          <div class="card-header">
-            Buttons
-          </div>
-          <div class="card-body gap-2">
-            <div class="font-semibold text-gray-600">Default</div>
-            <div>
-              <button class="btn btn-default">Default</button>
-              <button class="btn btn-primary">Primary</button>
-              <button class="btn btn-secondary">Secondary</button>
-              <button class="btn btn-info">Info</button>
-              <button class="btn btn-warning">Warning</button>
-              <button class="btn btn-success">Success</button>
-              <button class="btn btn-error">Error</button>
-              <button class="btn btn-dark">Dark</button>
-            </div>
-            <div class="font-semibold text-gray-600">Outlined</div>
-            <div>
-              <button class="btn btn-outlined btn-default">Default</button>
-              <button class="btn btn-outlined btn-primary">Primary</button>
-              <button class="btn btn-outlined btn-secondary">Secondary</button>
-              <button class="btn btn-outlined btn-info">Info</button>
-              <button class="btn btn-outlined btn-warning">Warning</button>
-              <button class="btn btn-outlined btn-success">Success</button>
-              <button class="btn btn-outlined btn-error">Error</button>
-              <button class="btn btn-outlined btn-dark">Dark</button>
-            </div>
-            <div class="font-semibold text-gray-600">Text</div>
-            <div>
-              <button class="btn btn-text btn-default">Default</button>
-              <button class="btn btn-text btn-primary">Primary</button>
-              <button class="btn btn-text btn-secondary">Secondary</button>
-              <button class="btn btn-text btn-info">Info</button>
-              <button class="btn btn-text btn-warning">Warning</button>
-              <button class="btn btn-text btn-success">Success</button>
-              <button class="btn btn-text btn-error">Error</button>
-              <button class="btn btn-text btn-dark">Dark</button>
-            </div>
-            <div class="font-semibold text-gray-600">Rounded</div>
-            <div>
-              <button class="btn btn-rounded btn-default">Default</button>
-              <button class="btn btn-rounded btn-primary">Primary</button>
-              <button class="btn btn-rounded btn-secondary">Secondary</button>
-              <button class="btn btn-rounded btn-info">Info</button>
-              <button class="btn btn-rounded btn-warning">Warning</button>
-              <button class="btn btn-rounded btn-success">Success</button>
-              <button class="btn btn-rounded btn-error">Error</button>
-              <button class="btn btn-rounded btn-dark">Dark</button>
-            </div>
-            <div class="font-semibold text-gray-600">Sizing</div>
-            <div>
-              <button class="btn btn-primary btn-sm">small</button>
-              <button class="btn btn-primary">default</button>
-              <button class="btn btn-primary btn-lg">large</button>
-            </div>
-          </div>
-        </div>
-
+      <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 container mx-auto my-5">
+        <!-- item -->
         <div class="card card-bordered">
-          <div class="card-header">
-            Forms
+          <div class="card-header">Alerts</div>
+          <div class="card-body space-y-2">
+            <!-- alert -->
+            <div class="alert alert-primary">
+              Alert Component
+              <div class="flex-grow"></div>
+              <button class="">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <!-- ./alert -->
+            <!-- alert -->
+            <div class="alert alert-secondary">
+              Alert Component
+              <div class="flex-grow"></div>
+              <button class="">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <!-- ./alert -->
+            <!-- alert -->
+            <div class="alert alert-default">
+              Alert Component
+              <div class="flex-grow"></div>
+              <button class="">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <!-- ./alert -->
           </div>
-          <form class="">
-            <div class="card-body">
+          <div class="card-footer">
+            <a href="/alerts/" class="btn btn-block btn-outlined btn-primary">View</a>
+          </div>
+        </div>
+        <!-- end item -->
+        <!-- item -->
+        <div class="card card-bordered">
+          <div class="card-header">Buttons</div>
+          <div class="card-body">
+            <div class="flex gap-2 flex-wrap">
+              <button class="btn btn-default">default</button>
+              <button class="btn btn-primary">primary</button>
+              <button class="btn btn-secondary">secondary</button>
+              <button class="btn btn-info">info</button>
+              <button class="btn btn-warning">warning</button>
+              <button class="btn btn-success">success</button>
+              <button class="btn btn-error">error</button>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="/alerts/" class="btn btn-block btn-outlined btn-primary">View</a>
+          </div>
+        </div>
+        <!-- end item -->
+        <!-- item -->
+        <div class="card card-bordered">
+          <div class="card-header">Cards</div>
+          <div class="card-body">
+            <div class="card">
+              <div class="card-header">Header</div>
+              <div class="card-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima consectetur quidem
+                non facilis assumenda dolorem.</div>
+              <div class="card-footer">Footer</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="/buttons/" class="btn btn-block btn-outlined btn-primary">View</a>
+          </div>
+        </div>
+        <!-- end item -->
+        <!-- item -->
+        <div class="card card-bordered">
+          <div class="card-header">Lists</div>
+          <div class="card-body">
+            <div class="list list-bordered list-hover">
+              <div class="list-item">List Active</div>
+              <div class="list-item">List Disabled</div>
+              <div class="list-item">List Item</div>
+              <div class="list-item">List Item</div>
+              <div class="list-item disabled">List Item</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="/lists/" class="btn btn-block btn-outlined btn-primary">View</a>
+          </div>
+        </div>
+        <!-- end item -->
+        <!-- item -->
+        <div class="card card-bordered">
+          <div class="card-header">Forms</div>
+          <div class="card-body">
+            <form>
               <div class="form-group">
                 <label for="name" class="form-label">Name</label>
-                <input id="name" type="text" placeholder="Name" class="form-input" />
+                <input type="text" class="form-input" id="name">
               </div>
               <div class="form-group">
                 <label for="email" class="form-label">Email</label>
-                <input id="email" type="text" placeholder="Email" class="form-input form-input-error" />
+                <input type="text" class="form-input" id="email">
               </div>
-              <div class="form-group">
-                <label for="age" class="form-label">Age</label>
-                <input id="age" type="number" placeholder="Age" class="form-input w-full sm:w-2/12" />
+              <div class="flex gap-2">
+                <button class="btn btn-primary">Submit</button>
+                <button class="btn btn-default">Cancel</button>
               </div>
-              <div class="form-group">
-                <label for="password" class="form-label">Password</label>
-                <input id="password" type="password" placeholder="Password" class="form-input" />
-              </div>
-              <div class="form-group">
-                <label for="sex" class="form-label">Gender</label>
-                <div class="w-full flex gap-4">
-                  <label class="flex gap-2 items-center">
-                    <input name="sex" value="male" type="radio" />
-                    Male
-                  </label>
-                  <label class="flex gap-2 items-center">
-                    <input name="sex" value="female" type="radio" />
-                    Female
-                  </label>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="interest" class="form-label">Interest</label>
-                <select id="interest" name="interest" class="form-input">
-                  <option value="">Select</option>
-                  <option>Backend</option>
-                  <option>Frontend</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="address" class="form-label">Address</label>
-                <textarea id="address" class="form-input" placeholder="Your Address"></textarea>
-              </div>
-            </div>
-
-            <div class="card-footer bg-gray-100">
-              <button class="btn btn-primary">Submit</button>
-              <button class="btn btn-text btn-default">Cancel</button>
-            </div>
-          </form>
-
+            </form>
+          </div>
+          <div class="card-footer">
+            <a href="/forms/" class="btn btn-block btn-outlined btn-primary">View</a>
+          </div>
         </div>
-      </main>
-    </div>
-
-    <!-- footer -->
-    <footer class="container mx-auto text-sm text-gray-500 py-2">
-      Copyright &copy; 2022-Present &middot; <a href="https://github.com/gravitano">Warsono</a>
-    </footer>
+        <!-- end item -->
+      </div>
+    </app-layout>
   </div>
 
   <script type="module" src="/main.js"></script>
