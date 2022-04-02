@@ -143,6 +143,10 @@ app.component('AppSidebar', {
         title: 'Lists',
         path: '/lists/'
       },
+      {
+        title: 'Timelines',
+        path: '/timelines/'
+      },
     ])
 
 
