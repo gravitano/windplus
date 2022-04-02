@@ -18,6 +18,8 @@ export default defineConfig({
         buttons: resolve(__dirname, 'buttons/index.html'),
         forms: resolve(__dirname, 'forms/index.html'),
         lists: resolve(__dirname, 'lists/index.html'),
+        timelines: resolve(__dirname, 'timelines/index.html'),
+        navs: resolve(__dirname, 'navs/index.html'),
       },
     },
   },
