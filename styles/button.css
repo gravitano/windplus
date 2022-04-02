@@ -146,3 +146,25 @@
 .btn-link {
   @apply p-0;
 }
+
+/* disabled */
+.btn:disabled,
+.btn.disabled {
+  @apply cursor-not-allowed text-gray-400 bg-gray-200 border-gray-200
+        hover:bg-gray-200 hover:text-gray-400 hover:border-gray-200;
+}
+.btn.btn-outlined:disabled,
+.btn.btn-outlined.disabled {
+  @apply cursor-not-allowed text-gray-400 bg-transparent border-gray-200
+        hover:bg-transparent hover:text-gray-400 hover:border-gray-200;
+}
+.btn.btn-text:disabled,
+.btn.btn-text.disabled {
+  @apply cursor-not-allowed text-gray-400 bg-transparent border-transparent
+        hover:bg-transparent hover:text-gray-400 hover:border-transparent;
+}
+.btn.btn-link:disabled,
+.btn.btn-link.disabled {
+  @apply cursor-not-allowed text-gray-400 bg-transparent border-transparent
+        hover:bg-transparent hover:text-gray-400 hover:border-transparent;
+}
