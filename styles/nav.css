@@ -1,0 +1,18 @@
+/* nav */
+.nav {
+  @apply flex gap-2;
+}
+
+.nav-tabs {
+  @apply justify-items-stretch;
+}
+
+.nav-tabs .nav-item {
+  @apply no-underline text-gray-500 flex justify-center items-center gap-2 font-semibold w-full
+    border-b-[5px] border-transparent px-4 py-3 transition duration-300
+    hover:text-primary-500 hover:border-b-primary-500 cursor-pointer;
+}
+
+.nav-tabs .nav-item.active {
+  @apply text-primary-500 border-b-primary-500;
+}
