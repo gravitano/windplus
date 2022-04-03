@@ -20,6 +20,7 @@ export default defineConfig({
         lists: resolve(__dirname, 'lists/index.html'),
         timelines: resolve(__dirname, 'timelines/index.html'),
         navs: resolve(__dirname, 'navs/index.html'),
+        breadcrumb: resolve(__dirname, 'breadcrumb/index.html'),
       },
     },
   },
