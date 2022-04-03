@@ -1,0 +1,24 @@
+.breadcrumb {
+  @apply flex gap-2 items-center;
+}
+
+.breadcrumb-item {
+  @apply text-primary-500 hover:text-primary-600 hover:underline;
+}
+
+.breadcrumb-item.active {
+  @apply text-gray-500 hover:no-underline;
+}
+
+.breadcrumb-divider {
+  @apply text-gray-500 text-sm;
+}
+
+/* underline variant */
+.breadcrumb.breadcrumb-underline .breadcrumb-item {
+  @apply underline;
+}
+
+.breadcrumb.breadcrumb-underline .breadcrumb-item.active {
+  @apply text-gray-500 no-underline hover:no-underline;
+}

@@ -151,6 +151,10 @@ app.component('AppSidebar', {
         title: 'Navs',
         path: '/navs/'
       },
+      {
+        title: 'Breadcrumb',
+        path: '/breadcrumb/'
+      },
     ])
 
 

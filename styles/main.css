@@ -6,6 +6,7 @@
 @import './list.css';
 @import './timeline.css';
 @import './nav.css';
+@import './breadcrumb.css';
 
 /* hyperlink */
 a {
