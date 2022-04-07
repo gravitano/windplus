@@ -27,7 +27,7 @@
 
 /* list item */
 .list-item {
-  @apply appearance-none transition duration-300 flex w-full px-3 py-2 rounded-md text-gray-700;
+  @apply appearance-none transition duration-300 flex items-center w-full px-3 py-2 rounded-md text-gray-700;
 }
 
 /* list item state */
