@@ -167,3 +167,11 @@ a.list-item {
 .list-footer {
   @apply px-4 py-2;
 }
+
+.list-item-icon {
+  @apply w-6;
+}
+
+.list-child {
+  @apply mb-0;
+}
