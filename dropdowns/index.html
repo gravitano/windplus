@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dropdowns - Tailwind Components</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="app">
+    <app-layout>
+      <div class="mb-5 space-y-0.5">
+        <h1 class="font-bold text-2xl text-gray-800">Dropdowns</h1>
+        <p class="text-lg text-gray-500">Dropdown Component</p>
+      </div>
+
+      <div class="card card-bordered mb-5">
+        <div class="card-header">
+          Default
+        </div>
+        <div class="card-body">
+          <div class="dropdown">
+            <button class="btn btn-default">Dropdown Button</button>
+            <ul class="dropdown-menu">
+              <li><a href="javascript:void(0)" class="dropdown-item active">Active</a></li>
+              <li><a href="javascript:void(0)" class="dropdown-item">Action 1</a></li>
+              <li><a href="javascript:void(0)" class="dropdown-item">Action 2</a></li>
+              <li><a href="javascript:void(0)" class="dropdown-item">Action 3</a></li>
+              <li>
+                <div class="dropdown-divider"></div>
+              </li>
+              <li><a href="javascript:void(0)" class="dropdown-item">Action 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-bordered mb-5 mt-60">
+        <div class="card-header">
+          Dense
+        </div>
+        <div class="card-body">
+          <div class="dropdown dropdown-dense">
+            <button class="btn btn-default">Dropdown Button</button>
+            <ul class="dropdown-menu">
+              <li><a href="javascript:void(0)" class="dropdown-item active">Active</a></li>
+              <li><a href="javascript:void(0)" class="dropdown-item">Action 1</a></li>
+              <li><a href="javascript:void(0)" class="dropdown-item">Action 2</a></li>
+              <li><a href="javascript:void(0)" class="dropdown-item">Action 3</a></li>
+              <li>
+                <div class="dropdown-divider"></div>
+              </li>
+              <li><a href="javascript:void(0)" class="dropdown-item">Action 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-bordered mb-5 mt-60">
+        <div class="card-header">
+          Small
+        </div>
+        <div class="card-body">
+          <div class="dropdown dropdown-sm">
+            <button class="btn btn-default">Dropdown Button</button>
+            <ul class="dropdown-menu">
+              <li><a href="javascript:void(0)" class="dropdown-item active">Active</a></li>
+              <li><a href="javascript:void(0)" class="dropdown-item">Action 1</a></li>
+              <li><a href="javascript:void(0)" class="dropdown-item">Action 2</a></li>
+              <li><a href="javascript:void(0)" class="dropdown-item">Action 3</a></li>
+              <li>
+                <div class="dropdown-divider"></div>
+              </li>
+              <li><a href="javascript:void(0)" class="dropdown-item">Action 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-bordered mb-5 mt-60">
+        <div class="card-header">
+          Menu Right
+        </div>
+        <div class="card-body">
+          <div>
+            <div class="dropdown">
+              <button class="btn btn-default">Dropdown Button</button>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="javascript:void(0)" class="dropdown-item active">Active</a></li>
+                <li><a href="javascript:void(0)" class="dropdown-item">Action 1</a></li>
+                <li><a href="javascript:void(0)" class="dropdown-item">Action 2</a></li>
+                <li><a href="javascript:void(0)" class="dropdown-item">Action 3</a></li>
+                <li>
+                  <div class="dropdown-divider"></div>
+                </li>
+                <li><a href="javascript:void(0)" class="dropdown-item">Action 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </app-layout>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

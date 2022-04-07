@@ -159,6 +159,10 @@ app.component('AppSidebar', {
         title: 'Accordion',
         path: '/accordions/'
       },
+      {
+        title: 'Dropdowns',
+        path: '/dropdowns/'
+      },
     ])
 
 

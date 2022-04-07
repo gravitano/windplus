@@ -1,0 +1,33 @@
+.dropdown {
+  @apply relative inline w-auto;
+}
+
+.dropdown-menu {
+  @apply bg-white border border-gray-300 rounded absolute z-20 min-w-[14rem] max-w-fit py-1 mt-0.5;
+}
+
+.dropdown-item {
+  @apply px-4 py-2 text-gray-600 hover:no-underline hover:bg-gray-100 hover:text-gray-600
+    flex gap-2 w-full transition duration-300 cursor-pointer
+    active:bg-primary-500 active:text-white;
+}
+
+.dropdown-item.active {
+  @apply bg-primary-500 text-white;
+}
+
+.dropdown-divider {
+  @apply border-b h-1;
+}
+
+.dropdown.dropdown-dense .dropdown-item {
+  @apply py-1;
+}
+
+.dropdown.dropdown-sm .dropdown-item {
+  @apply text-sm;
+}
+
+.dropdown-menu.dropdown-menu-right {
+  @apply right-0;
+}
