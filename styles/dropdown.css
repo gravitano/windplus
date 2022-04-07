@@ -3,7 +3,7 @@
 }
 
 .dropdown-menu {
-  @apply bg-white border border-gray-300 rounded absolute z-20 min-w-[14rem] max-w-fit py-1 mt-0.5;
+  @apply bg-white border border-gray-300 rounded absolute z-20 min-w-[14rem] max-w-fit py-1;
 }
 
 .dropdown-item {
@@ -30,4 +30,8 @@
 
 .dropdown-menu.dropdown-menu-right {
   @apply right-0;
+}
+
+.dropdown.dropdown-hover .dropdown-menu {
+  @apply hidden;
 }
