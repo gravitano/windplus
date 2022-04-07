@@ -4,7 +4,12 @@ A starter for prototyping using HTML + Vanilla JS + Tailwind.
 
 > 🚧 Work in progress
 
-# Setup
+## Major Dependencies
+
+- Tailwind CSS
+- Vue
+
+## Setup
 
 **Install dependencies**:
 
