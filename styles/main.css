@@ -7,6 +7,7 @@
 @import './timeline.css';
 @import './nav.css';
 @import './breadcrumb.css';
+@import './accordion.css';
 
 /* hyperlink */
 a {

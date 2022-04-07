@@ -155,6 +155,10 @@ app.component('AppSidebar', {
         title: 'Breadcrumb',
         path: '/breadcrumb/'
       },
+      {
+        title: 'Accordion',
+        path: '/accordions/'
+      },
     ])
 
 
