@@ -24,8 +24,13 @@
 }
 
 .nav-item {
-  @apply flex justify-center items-center px-4 py-3 no-underline hover:no-underline
-    text-gray-600;
+  @apply flex justify-center items-center px-4 py-2 no-underline hover:no-underline
+    text-gray-600 hover:text-primary-500;
+}
+
+.nav-item.disabled,
+.nav-item:disabled {
+  @apply cursor-not-allowed text-gray-400 hover:text-gray-400;
 }
 
 .nav-item.active {
@@ -45,9 +50,15 @@
   @apply -mb-[1px] border border-transparent text-gray-600 hover:text-gray-600 font-normal;
 }
 
-.nav-tabs .nav-item:hover,
+.nav-tabs .nav-item:not(:disabled):hover,
+.nav-tabs .nav-item:not(.disabled):hover,
 .nav-tabs .nav-item.active {
   @apply border-gray-300 border-x border-t rounded-t-md border-b-transparent bg-white;
+}
+
+.nav-tabs .nav-item.disabled,
+.nav-tabs .nav-item:disabled {
+  @apply hover:border-x-transparent hover:border-t-transparent text-gray-400;
 }
 
 /* tabs alt */
@@ -60,4 +71,24 @@
 
 .nav-tabs-alt .nav-item.active {
   @apply text-primary-500 border-b-primary-500;
+}
+
+.nav-tabs-alt .nav-item.disabled,
+.nav-tabs-alt .nav-item:disabled {
+  @apply border-transparent;
+}
+
+/* pills */
+.nav-pills .nav-item {
+  @apply rounded-md;
+}
+
+.nav-pills .nav-item.active {
+  @apply bg-primary-500 text-white;
+}
+
+/* disabled */
+.nav-item:disabled,
+.nav-item.disabled {
+  @apply text-gray-400 hover:text-gray-400 cursor-not-allowed;
 }
