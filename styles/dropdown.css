@@ -3,7 +3,12 @@
 }
 
 .dropdown-menu {
-  @apply bg-white border border-gray-300 rounded absolute z-20 min-w-[14rem] max-w-fit py-1;
+  @apply bg-white border border-gray-300 rounded absolute z-20 min-w-[14rem] max-w-fit py-1 hidden;
+}
+
+.dropdown-menu.open,
+.dropdown-menu.show {
+  @apply block;
 }
 
 .dropdown-item {
@@ -28,7 +33,8 @@
   @apply text-sm;
 }
 
-.dropdown-menu.dropdown-menu-right {
+.dropdown-menu.dropdown-menu-right,
+.dropdown-menu.dropdown-menu-end {
   @apply right-0;
 }
 
