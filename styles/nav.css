@@ -1,6 +1,6 @@
 /* nav */
 .nav {
-  @apply flex gap-2 overflow-x-auto;
+  @apply flex gap-2;
 }
 
 .nav-center {
