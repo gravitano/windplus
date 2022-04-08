@@ -1,5 +1,5 @@
 .breadcrumb {
-  @apply flex gap-2 items-center;
+  @apply flex gap-2 items-center flex-wrap;
 }
 
 .breadcrumb-item {
