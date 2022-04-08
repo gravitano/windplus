@@ -3,6 +3,17 @@
   @apply flex gap-2;
 }
 
+.nav-item {
+  @apply flex justify-center items-center px-4 py-3 no-underline hover:no-underline
+    text-gray-600;
+}
+
+.nav-item.active {
+  @apply font-semibold text-primary-500;
+}
+
+/* tabs */
+
 .nav-tabs {
   @apply justify-items-stretch;
 }
