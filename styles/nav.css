@@ -32,18 +32,32 @@
   @apply font-semibold text-primary-500;
 }
 
-/* tabs */
-
-.nav-tabs {
+.nav-fill {
   @apply justify-items-stretch;
 }
 
-.nav-tabs .nav-item {
-  @apply no-underline text-gray-500 flex justify-center items-center gap-2 font-semibold w-full
-    border-b-[5px] border-transparent px-4 py-3 transition duration-300
-    hover:text-primary-500 hover:border-b-primary-500 cursor-pointer;
+/* tabs */
+.nav-tabs {
+  @apply border-b;
 }
 
+.nav-tabs .nav-item {
+  @apply -mb-[1px] border border-transparent text-gray-600 hover:text-gray-600 font-normal;
+}
+
+.nav-tabs .nav-item:hover,
 .nav-tabs .nav-item.active {
+  @apply border-gray-300 border-x border-t rounded-t-md border-b-transparent bg-white;
+}
+
+/* tabs alt */
+.nav-tabs-alt .nav-item {
+  @apply no-underline text-gray-500 flex justify-center items-center gap-2
+    border-b-4 border-transparent px-4 py-3 transition duration-300
+    hover:text-primary-500 hover:border-b-primary-500
+    cursor-pointer;
+}
+
+.nav-tabs-alt .nav-item.active {
   @apply text-primary-500 border-b-primary-500;
 }

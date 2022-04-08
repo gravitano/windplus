@@ -83,6 +83,19 @@
         </div>
       </div>
 
+      <div class="card card-bordered mb-5">
+        <div class="card-header">
+          Tabs Alternative
+        </div>
+        <div class="card-body">
+          <div class="nav nav-tabs-alt">
+            <a href="javascript:void(0);" v-for="i in 3" :key="i" class="nav-item" :class="i === 1 ? 'active' : ''">
+              Item {{ i }}
+            </a>
+          </div>
+        </div>
+      </div>
+
 
     </app-layout>
   </div>
