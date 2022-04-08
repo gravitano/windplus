@@ -3,6 +3,26 @@
   @apply flex gap-2;
 }
 
+.nav-center {
+  @apply justify-center;
+}
+
+.nav-right {
+  @apply justify-end;
+}
+
+.nav-vertical {
+  @apply flex-col;
+}
+
+.nav-vertical .nav-item {
+  @apply py-2;
+}
+
+.nav-left .nav-item {
+  @apply justify-start;
+}
+
 .nav-item {
   @apply flex justify-center items-center px-4 py-3 no-underline hover:no-underline
     text-gray-600;
