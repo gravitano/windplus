@@ -104,6 +104,20 @@
 
       <div class="card card-bordered mb-5">
         <div class="card-header">
+          Links
+        </div>
+        <div class="card-body overflow-x-auto relative">
+          <div class="nav nav-links">
+            <a href="javascript:void(0);" v-for="i in 4" :key="i" class="nav-item"
+              :class="[i === 1 ? 'active' : '', {disabled: i === 4} ]" :disabled="i === 4">
+              Item {{ i }}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-bordered mb-5">
+        <div class="card-header">
           Pills
         </div>
         <div class="card-body overflow-x-auto relative">

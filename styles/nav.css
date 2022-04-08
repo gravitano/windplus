@@ -100,3 +100,9 @@
 .nav-item.disabled {
   @apply text-gray-400 hover:text-gray-400 cursor-not-allowed;
 }
+
+/* nav links */
+.nav-links .nav-item:not(:disabled),
+.nav-links .nav-item:not(.disabled) {
+  @apply hover:underline px-2;
+}
