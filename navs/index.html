@@ -132,6 +132,34 @@
 
       <div class="card card-bordered mb-5">
         <div class="card-header">
+          Dropdown
+        </div>
+        <div class="card-body">
+          <div class="nav nav-pills">
+            <a href="javascript:void(0);" v-for="i in 4" :key="i" class="nav-item"
+              :class="[i === 1 ? 'active' : '', {disabled: i === 4} ]" :disabled="i === 4">
+              Item {{ i }}
+            </a>
+
+            <div class="dropdown dropdown-hover group">
+              <button class="nav-item dropdown-activator">Dropdown</button>
+              <ul class="dropdown-menu dropdown-menu-right group-hover:block">
+                <li><a href="javascript:void(0)" class="dropdown-item active">Active</a></li>
+                <li><a href="javascript:void(0)" class="dropdown-item">Action 1</a></li>
+                <li><a href="javascript:void(0)" class="dropdown-item">Action 2</a></li>
+                <li><a href="javascript:void(0)" class="dropdown-item">Action 3</a></li>
+                <li>
+                  <div class="dropdown-divider"></div>
+                </li>
+                <li><a href="javascript:void(0)" class="dropdown-item">Action 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-bordered mb-5">
+        <div class="card-header">
           Fill
         </div>
         <div class="card-body gap-4">
