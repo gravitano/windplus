@@ -22,3 +22,11 @@
 .form-input-error {
   @apply focus:border-red-500 focus:ring-red-500 focus:ring-opacity-50;
 }
+
+input[type='checkbox'] {
+  @apply text-primary-500 rounded;
+}
+
+input[type='radio'] {
+  @apply text-primary-500;
+}
