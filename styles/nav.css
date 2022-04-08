@@ -41,6 +41,10 @@
   @apply justify-items-stretch;
 }
 
+.nav-fill .nav-item {
+  @apply w-full;
+}
+
 /* tabs */
 .nav-tabs {
   @apply border-b;
