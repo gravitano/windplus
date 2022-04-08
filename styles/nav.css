@@ -83,6 +83,10 @@
   @apply rounded-md;
 }
 
+.nav-pills-rounded .nav-item {
+  @apply rounded-full;
+}
+
 .nav-pills .nav-item.active {
   @apply bg-primary-500 text-white;
 }
