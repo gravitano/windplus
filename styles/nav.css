@@ -95,6 +95,19 @@
   @apply bg-primary-500 text-white;
 }
 
+.nav-pills.nav-border .nav-item.active {
+  @apply border-primary-500;
+}
+
+.nav-pills.nav-border .nav-item {
+  @apply border border-gray-400 hover:bg-primary-500 hover:text-white hover:border-primary-500 transition duration-300;
+}
+
+.nav-pills.nav-border .nav-item.disabled,
+.nav-pills.nav-border .nav-item:disabled {
+  @apply border border-gray-200 hover:bg-white hover:text-gray-400 hover:border-gray-200;
+}
+
 /* disabled */
 .nav-item:disabled,
 .nav-item.disabled {
