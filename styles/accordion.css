@@ -28,7 +28,8 @@
 }
 
 /* open */
-.accordion-item.open .accordion-body {
+.accordion-item.open .accordion-body,
+.accordion-body.show {
   @apply block border-b;
 }
 
@@ -47,4 +48,13 @@
 
 .accordion.accordion-flush .accordion-item:last-child .accordion-header {
   @apply border-b-0;
+}
+
+.collapse:not(.show) {
+  @apply hidden;
+}
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
 }
