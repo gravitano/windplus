@@ -1,6 +1,6 @@
-# Vite Tailwind Vanilla
+# TailwindStrap
 
-A starter for prototyping using HTML + Vanilla JS + Tailwind.
+Tailwind component collection. Inspired by Bootstrap.
 
 > 🚧 Work in progress
 
