@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Button Group - TailwindStrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <script async defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div id="app">
+    <app-layout>
+      <div class="mb-5 space-y-0.5">
+        <h1 class="font-bold text-2xl text-gray-800">Button Group</h1>
+        <p class="text-lg text-gray-500">Button Group Component</p>
+      </div>
+
+      <div class="card card-bordered mb-5">
+        <div class="card-header">
+          Basic
+        </div>
+        <div class="card-body">
+          <div>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-primary">Left</button>
+              <button type="button" class="btn btn-primary">Middle</button>
+              <button type="button" class="btn btn-primary">Right</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-bordered mb-5">
+        <div class="card-header">
+          Mixed Styles
+        </div>
+        <div class="card-body">
+          <div>
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+              <button type="button" class="btn btn-error">Left</button>
+              <button type="button" class="btn btn-warning">Middle</button>
+              <button type="button" class="btn btn-success">Right</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-bordered mb-5">
+        <div class="card-header">
+          Outlined
+        </div>
+        <div class="card-body">
+          <div>
+            <div class="btn-group" role="group" aria-label="Basic outlined example">
+              <button type="button" class="btn btn-outlined btn-primary">Left</button>
+              <button type="button" class="btn btn-outlined btn-primary">Middle</button>
+              <button type="button" class="btn btn-outlined btn-primary">Right</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-bordered mb-5">
+        <div class="card-header">
+          Checkbox
+        </div>
+        <div class="card-body">
+          <div>
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+              <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+              <label class="btn btn-outlined btn-primary" for="btncheck1">Checkbox 1</label>
+
+              <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+              <label class="btn btn-outlined btn-primary" for="btncheck2">Checkbox 2</label>
+
+              <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+              <label class="btn btn-outlined btn-primary" for="btncheck3">Checkbox 3</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-bordered mb-5">
+        <div class="card-header">
+          Radio
+        </div>
+        <div class="card-body">
+          <div>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+              <label class="btn btn-outlined btn-primary" for="btnradio1">Radio 1</label>
+
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+              <label class="btn btn-outlined btn-primary" for="btnradio2">Radio 2</label>
+
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+              <label class="btn btn-outlined btn-primary" for="btnradio3">Radio 3</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-bordered mb-5">
+        <div class="card-header">
+          Toolbar
+        </div>
+        <div class="card-body">
+          <div>
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+              <div class="btn-group me-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-primary">1</button>
+                <button type="button" class="btn btn-primary">2</button>
+                <button type="button" class="btn btn-primary">3</button>
+                <button type="button" class="btn btn-primary">4</button>
+              </div>
+              <div class="btn-group me-2" role="group" aria-label="Second group">
+                <button type="button" class="btn btn-secondary">5</button>
+                <button type="button" class="btn btn-secondary">6</button>
+                <button type="button" class="btn btn-secondary">7</button>
+              </div>
+              <div class="btn-group" role="group" aria-label="Third group">
+                <button type="button" class="btn btn-info">8</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-bordered mb-5">
+        <div class="card-header">
+          Nesting
+        </div>
+        <div class="card-body">
+          <div>
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+              <button type="button" class="btn btn-primary">1</button>
+              <button type="button" class="btn btn-primary">2</button>
+
+              <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-bordered mb-5">
+        <div class="card-header">
+          Vertical
+        </div>
+        <div class="card-body gap-4">
+          <div>
+            <div class="btn-group btn-group-vertical" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-primary">Left</button>
+              <button type="button" class="btn btn-primary">Middle</button>
+              <button type="button" class="btn btn-primary">Right</button>
+            </div>
+          </div>
+
+          <div>
+            <div class="btn-group btn-group-vertical" role="group" aria-label="Button group with nested dropdown">
+              <button type="button" class="btn btn-primary">1</button>
+              <button type="button" class="btn btn-primary">2</button>
+
+              <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="btn-toolbar btn-group-vertical" role="toolbar" aria-label="Toolbar with button groups">
+              <div class="btn-group btn-group-vertical me-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-primary">1</button>
+                <button type="button" class="btn btn-primary">2</button>
+                <button type="button" class="btn btn-primary">3</button>
+                <button type="button" class="btn btn-primary">4</button>
+              </div>
+              <div class="btn-group btn-group-vertical me-2" role="group" aria-label="Second group">
+                <button type="button" class="btn btn-secondary">5</button>
+                <button type="button" class="btn btn-secondary">6</button>
+                <button type="button" class="btn btn-secondary">7</button>
+              </div>
+              <div class="btn-group btn-group-vertical" role="group" aria-label="Third group">
+                <button type="button" class="btn btn-info">8</button>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="btn-group btn-group-vertical" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+              <label class="btn btn-outlined btn-primary" for="btnradio1">Radio 1</label>
+
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+              <label class="btn btn-outlined btn-primary" for="btnradio2">Radio 2</label>
+
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+              <label class="btn btn-outlined btn-primary" for="btnradio3">Radio 3</label>
+            </div>
+          </div>
+
+          <div>
+            <div class="btn-group btn-group-vertical" role="group" aria-label="Basic checkbox toggle button group">
+              <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+              <label class="btn btn-outlined btn-primary" for="btncheck1">Checkbox 1</label>
+
+              <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+              <label class="btn btn-outlined btn-primary" for="btncheck2">Checkbox 2</label>
+
+              <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+              <label class="btn btn-outlined btn-primary" for="btncheck3">Checkbox 3</label>
+            </div>
+          </div>
+
+          <div>
+            <div class="btn-group btn-group-vertical" role="group" aria-label="Basic outlined example">
+              <button type="button" class="btn btn-outlined btn-primary">Left</button>
+              <button type="button" class="btn btn-outlined btn-primary">Middle</button>
+              <button type="button" class="btn btn-outlined btn-primary">Right</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </app-layout>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

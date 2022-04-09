@@ -1,0 +1,103 @@
+.btn-group {
+  @apply flex;
+}
+
+.btn-group > .btn {
+  @apply rounded-none;
+}
+
+.btn-group:not(.btn-group-vertical) > .btn:first-of-type {
+  @apply rounded-l-md;
+}
+
+.btn-group:not(.btn-group-vertical) > .btn:last-of-type {
+  @apply rounded-r-md;
+}
+
+/* border */
+.btn-group:not(.btn-group-vertical) .btn:not(:first-of-type) {
+  @apply -ml-[1px];
+}
+
+/* checkbox & radio */
+.btn-group .btn-check {
+  @apply appearance-none hidden;
+}
+
+.btn-group .btn-check:checked + .btn.btn-primary {
+  @apply bg-primary-600 border-primary-600 text-white;
+}
+
+.btn-group .btn-check:checked + .btn.btn-secondary {
+  @apply bg-secondary-600 border-secondary-600 text-white;
+}
+
+.btn-group .btn-check:checked + .btn.btn-info {
+  @apply bg-info-600 border-info-600 text-white;
+}
+
+.btn-group .btn-check:checked + .btn.btn-warning {
+  @apply bg-warning-600 border-warning-600 text-white;
+}
+
+.btn-group .btn-check:checked + .btn.btn-success {
+  @apply bg-success-600 border-success-600 text-white;
+}
+
+.btn-group .btn-check:checked + .btn.btn-error {
+  @apply bg-error-600 border-error-600 text-white;
+}
+
+.btn-group .btn-check:checked + .btn.btn-dark {
+  @apply bg-gray-800 border-gray-800 text-white;
+}
+
+/* toolbar */
+.btn-toolbar {
+  @apply flex gap-2;
+}
+
+/* nesting */
+.btn-group:not(.btn-group-vertical) > .btn-group:not(:last-child) > .btn,
+.btn-group:not(.btn-group-vertical)
+  > .btn:not(:last-child):not(.dropdown-toggle) {
+  @apply rounded-r-none;
+}
+
+.btn-group:not(.btn-group-vertical) > .btn-group:not(:first-child) > .btn,
+.btn-group:not(.btn-group-vertical) > .btn:nth-child(n + 3),
+.btn-group:not(.btn-group-vertical) > :not(.btn-check) + .btn {
+  @apply rounded-l-none;
+}
+
+/* vertical */
+.btn-group-vertical {
+  @apply flex-col inline-flex;
+}
+
+.btn-group-vertical .btn {
+  @apply flex-shrink-0;
+}
+
+.btn-group-vertical .btn:first-of-type {
+  @apply rounded-t-md;
+}
+
+.btn-group-vertical .btn:last-of-type {
+  @apply rounded-b-md;
+}
+
+.btn-group.btn-group-vertical .btn:not(:first-of-type) {
+  @apply -mt-[1px];
+}
+
+.btn-group.btn-group-vertical > .btn-group:not(:last-child) > .btn,
+.btn-group.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle) {
+  @apply rounded-b-none;
+}
+
+.btn-group.btn-group-vertical > .btn-group:not(:first-child) > .btn,
+.btn-group.btn-group-vertical > .btn:nth-child(n + 3),
+.btn-group.btn-group-vertical > :not(.btn-check) + .btn {
+  @apply rounded-t-none;
+}

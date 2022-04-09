@@ -167,6 +167,10 @@ app.component('AppSidebar', {
         title: 'Badges',
         path: '/badges/'
       },
+      {
+        title: 'Button Group',
+        path: '/button-group/'
+      },
     ])
 
 
