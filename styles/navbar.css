@@ -1,0 +1,11 @@
+.navbar {
+  @apply flex flex-wrap justify-between items-center py-3 px-4;
+}
+
+.navbar-brand {
+  @apply font-semibold text-gray-800;
+}
+
+.navbar-light {
+  @apply bg-gray-100;
+}

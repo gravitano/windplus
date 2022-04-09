@@ -175,6 +175,10 @@ app.component('AppSidebar', {
         title: 'Modal',
         path: '/modal/'
       },
+      {
+        title: 'Navbar',
+        path: '/navbar/'
+      },
     ])
 
 

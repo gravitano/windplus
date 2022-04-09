@@ -26,6 +26,7 @@ export default defineConfig({
         bagdes: resolve(__dirname, 'badges/index.html'),
         'button-group': resolve(__dirname, 'button-group/index.html'),
         modal: resolve(__dirname, 'modal/index.html'),
+        navbar: resolve(__dirname, 'navbar/index.html'),
       },
     },
   },
