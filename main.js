@@ -173,7 +173,7 @@ app.component('AppSidebar', {
       },
       {
         title: 'Modal',
-        path: '/Modal/'
+        path: '/modal/'
       },
     ])
 
