@@ -11,7 +11,7 @@
 }
 
 .modal-dialog {
-  @apply relative my-10 mx-auto w-auto transition duration-300;
+  @apply relative my-10 mx-auto w-auto transition duration-300 transform;
 }
 
 .modal.show .modal-dialog {
