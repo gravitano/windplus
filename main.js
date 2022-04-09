@@ -171,6 +171,10 @@ app.component('AppSidebar', {
         title: 'Button Group',
         path: '/button-group/'
       },
+      {
+        title: 'Modal',
+        path: '/Modal/'
+      },
     ])
 
 

@@ -25,6 +25,7 @@ export default defineConfig({
         dropdowns: resolve(__dirname, 'dropdowns/index.html'),
         bagdes: resolve(__dirname, 'badges/index.html'),
         'button-group': resolve(__dirname, 'button-group/index.html'),
+        modal: resolve(__dirname, 'modal/index.html'),
       },
     },
   },
