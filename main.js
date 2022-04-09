@@ -163,6 +163,10 @@ app.component('AppSidebar', {
         title: 'Dropdowns',
         path: '/dropdowns/'
       },
+      {
+        title: 'Badges',
+        path: '/badges/'
+      },
     ])
 
 

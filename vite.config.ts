@@ -23,6 +23,7 @@ export default defineConfig({
         breadcrumb: resolve(__dirname, 'breadcrumb/index.html'),
         accordions: resolve(__dirname, 'accordions/index.html'),
         dropdowns: resolve(__dirname, 'dropdowns/index.html'),
+        bagdes: resolve(__dirname, 'badges/index.html'),
       },
     },
   },
