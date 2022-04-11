@@ -28,6 +28,7 @@ export default defineConfig({
         modal: resolve(__dirname, 'modal/index.html'),
         navbar: resolve(__dirname, 'navbar/index.html'),
         table: resolve(__dirname, 'table/index.html'),
+        'nav-drawer': resolve(__dirname, 'nav-drawer/index.html'),
       },
     },
   },

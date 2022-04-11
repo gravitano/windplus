@@ -1,0 +1,63 @@
+.nav-drawer {
+  @apply p-2 w-[260px] bg-white flex flex-col;
+}
+
+.nav-drawer-title {
+  @apply font-bold text-lg;
+}
+
+.nav-drawer-subtitle {
+  @apply text-gray-500 text-sm;
+}
+
+.nav-drawer-append {
+  @apply border-t pt-2;
+}
+
+.nav-drawer-divider {
+  @apply -mx-2 border-b my-1;
+}
+
+/* dark */
+
+.nav-drawer-dark {
+  @apply bg-gray-900 text-white;
+
+  .nav-drawer-title {
+    @apply font-bold text-lg;
+  }
+
+  .nav-drawer-subtitle {
+    @apply text-gray-400;
+  }
+
+  .nav-drawer-append {
+    @apply border-gray-800;
+  }
+
+  .list {
+    .list-header {
+      @apply text-gray-400;
+    }
+
+    .list-item {
+      @apply text-gray-400 hover:text-gray-200 hover:bg-gray-800;
+
+      &:hover {
+        .list-item-title,
+        .list-item-subtitle {
+          @apply text-gray-200;
+        }
+      }
+
+      .list-item-title,
+      .list-item-subtitle {
+        @apply text-gray-400;
+      }
+    }
+  }
+
+  .nav-drawer-divider {
+    @apply border-gray-800;
+  }
+}

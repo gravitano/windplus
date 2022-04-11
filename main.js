@@ -183,6 +183,10 @@ app.component('AppSidebar', {
         title: 'Table',
         path: '/table/'
       },
+      {
+        title: 'Navigation Drawer',
+        path: '/nav-drawer/'
+      },
     ])
 
     menus.value.sort((a, b) => {
