@@ -91,6 +91,7 @@
   @apply rounded-full;
 }
 
+.nav-pills .nav-item:hover,
 .nav-pills .nav-item.active {
   @apply bg-primary-500 text-white;
 }
