@@ -29,6 +29,7 @@ export default defineConfig({
         navbar: resolve(__dirname, 'navbar/index.html'),
         table: resolve(__dirname, 'table/index.html'),
         'nav-drawer': resolve(__dirname, 'nav-drawer/index.html'),
+        'input-group': resolve(__dirname, 'input-group/index.html'),
       },
     },
   },

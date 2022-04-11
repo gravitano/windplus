@@ -187,6 +187,10 @@ app.component('AppSidebar', {
         title: 'Navigation Drawer',
         path: '/nav-drawer/'
       },
+      {
+        title: 'Input Group',
+        path: '/input-group/'
+      },
     ])
 
     menus.value.sort((a, b) => {

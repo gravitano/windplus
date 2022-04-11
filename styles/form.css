@@ -16,6 +16,7 @@
 }
 
 .form-control,
+.form-select,
 .form-input {
   @apply flex w-full border-gray-300 rounded-md transition duration-300 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50;
 }

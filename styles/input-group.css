@@ -1,0 +1,53 @@
+.input-group {
+  @apply flex items-center;
+
+  .input-group-text {
+    @apply px-4 py-2 bg-gray-100 border -mx-[1px] border-gray-300;
+
+    &:first-child {
+      @apply rounded-l-md;
+    }
+
+    &:last-child {
+      @apply rounded-r-md;
+    }
+  }
+
+  .form-select,
+  .form-control,
+  .form-input {
+    @apply rounded-none;
+
+    &:first-child {
+      @apply rounded-l-md;
+    }
+
+    &:last-child {
+      @apply rounded-r-md;
+    }
+  }
+
+  .btn {
+    @apply rounded-none -mx-[1px];
+
+    &:first-child {
+      @apply rounded-l-md;
+    }
+
+    &:last-child {
+      @apply rounded-r-md;
+    }
+  }
+
+  .dropdown .btn {
+    @apply rounded-none -mx-[1px];
+
+    &:first-of-type {
+      @apply rounded-l-md;
+    }
+
+    &:last-of-type {
+      @apply rounded-r-md;
+    }
+  }
+}

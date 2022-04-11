@@ -15,6 +15,7 @@
 @import './navbar.css';
 @import './table.css';
 @import './nav-drawer.css';
+@import './input-group.css';
 
 /* hyperlink */
 a {
