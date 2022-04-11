@@ -97,3 +97,11 @@
     @apply border-gray-800;
   }
 }
+
+.nav-drawer-screen {
+  @apply hidden sm:flex h-screen sm:h-[calc(100vh-65px)];
+}
+
+.nav-drawer-content {
+  @apply sm:ml-[260px] transition duration-300 px-4 py-2;
+}

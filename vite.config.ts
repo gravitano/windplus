@@ -30,6 +30,7 @@ export default defineConfig({
         table: resolve(__dirname, 'table/index.html'),
         'nav-drawer': resolve(__dirname, 'nav-drawer/index.html'),
         'input-group': resolve(__dirname, 'input-group/index.html'),
+        dashboard: resolve(__dirname, 'dashboard/index.html'),
       },
     },
   },

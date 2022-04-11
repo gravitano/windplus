@@ -62,8 +62,12 @@ app.component('AppHeader', {
         path: '/'
       },
       {
-        title: 'Docs',
+        title: 'Components',
         path: '/alerts/'
+      },
+      {
+        title: 'Layouts',
+        path: '/layouts/dashboard.html'
       },
     ])
 
