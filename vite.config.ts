@@ -27,6 +27,7 @@ export default defineConfig({
         'button-group': resolve(__dirname, 'button-group/index.html'),
         modal: resolve(__dirname, 'modal/index.html'),
         navbar: resolve(__dirname, 'navbar/index.html'),
+        table: resolve(__dirname, 'table/index.html'),
       },
     },
   },
