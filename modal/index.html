@@ -15,13 +15,22 @@
 <body>
 
   <div id="app">
-    <app-layout>
+    <app-layout :menus="[
+    {
+      title: 'Default',
+      href: '#default'
+    },
+    {
+      title: 'Centered',
+      href: '#centered'
+    },
+  ]">
       <div class="mb-5 space-y-0.5">
         <h1 class="font-bold text-2xl text-gray-800">Modal</h1>
         <p class="text-lg text-gray-500">Modal Component</p>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="default">
         <div class="card-header">
           Default
         </div>
@@ -65,7 +74,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="centered">
         <div class="card-header">
           Centered
         </div>

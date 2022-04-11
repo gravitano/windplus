@@ -12,13 +12,46 @@
 <body>
 
   <div id="app">
-    <app-layout>
+    <app-layout :menus="[
+    {
+      title: 'Default',
+      href: '#default'
+    },
+    {
+      title: 'Outside Card Body',
+      href: '#outside'
+    },
+    {
+      title: 'Dense',
+      href: '#dense'
+    },
+    {
+      title: 'Hover',
+      href: '#hover'
+    },
+    {
+      title: 'Stripped',
+      href: '#stripped'
+    },
+    {
+      title: 'Small',
+      href: '#small'
+    },
+    {
+      title: 'Bordered',
+      href: '#bordered'
+    },
+    {
+      title: 'Mixed Styles',
+      href: '#mixed-styles'
+    },
+  ]">
       <div class="mb-5 space-y-0.5">
         <h1 class="font-bold text-2xl text-gray-800">Table</h1>
         <p class="text-lg text-gray-500">Table Component</p>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id='default'>
         <div class="card-header">
           Default
         </div>
@@ -61,7 +94,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="outside">
         <div class="card-header">
           Outside Card Body
         </div>
@@ -104,7 +137,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="dense">
         <div class="card-header">
           Dense
         </div>
@@ -147,7 +180,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="hover">
         <div class="card-header">
           Hover
         </div>
@@ -190,7 +223,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="stripped">
         <div class="card-header">
           Stripped
         </div>
@@ -233,7 +266,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="small">
         <div class="card-header">
           Small Text
         </div>
@@ -276,7 +309,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="bordered">
         <div class="card-header">
           Bordered
         </div>
@@ -320,7 +353,7 @@
       </div>
 
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="mixed-styles">
         <div class="card-header">
           Mixed Styles
         </div>

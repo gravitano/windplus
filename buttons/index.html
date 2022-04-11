@@ -11,14 +11,47 @@
 
 <body>
   <div id="app">
-    <app-layout>
+    <app-layout :menus="[
+    {
+      title: 'Variants',
+      href: '#variants'
+    },
+    {
+      title: 'Rounded',
+      href: '#rounded'
+    },
+    {
+      title: 'Outlined',
+      href: '#outlined'
+    },
+    {
+      title: 'Text',
+      href: '#text'
+    },
+    {
+      title: 'Link',
+      href: '#link'
+    },
+    {
+      title: 'Disabled',
+      href: '#disabled'
+    },
+    {
+      title: 'Icon',
+      href: '#icon'
+    },
+    {
+      title: 'Sizes',
+      href: '#sizes'
+    },
+  ]">
       <div class="mb-5 space-y-0.5">
         <h1 class="font-bold text-2xl text-gray-800">Buttons</h1>
         <p class="text-lg text-gray-500">Button Component</p>
       </div>
 
       <div class="space-y-4">
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="variants">
           <div class="card-header">
             Button Variants
           </div>
@@ -36,7 +69,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="rounded">
           <div class="card-header">Rounded</div>
           <div class="card-body">
             <div class="space-y-2 space-x-2">
@@ -53,7 +86,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="outlined">
           <div class="card-header">Outlined</div>
           <div class="card-body">
             <div class="space-y-2 space-x-2">
@@ -70,7 +103,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="text">
           <div class="card-header">Text</div>
           <div class="card-body">
             <div class="space-y-2 space-x-2">
@@ -87,7 +120,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="link">
           <div class="card-header">Link</div>
           <div class="card-body">
             <div class="space-y-2 space-x-2">
@@ -105,7 +138,7 @@
         </div>
 
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="disabled">
           <div class="card-header">Disabled</div>
           <div class="card-body">
             <div class="font-semibold mt-4">Default</div>
@@ -155,7 +188,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="icon">
           <div class="card-header">Icon</div>
           <div class="card-body">
             <div class="space-y-2 space-x-2 mb-4">
@@ -361,7 +394,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="sizes">
           <div class="card-header">Sizes</div>
           <div class="card-body">
             <div class="space-x-2">

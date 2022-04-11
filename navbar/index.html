@@ -15,13 +15,34 @@
 <body>
 
   <div id="app">
-    <app-layout>
+    <app-layout :menus="[
+    {
+      title: 'Default',
+      href: '#default'
+    },
+    {
+      title: 'Colors',
+      href: '#colors'
+    },
+    {
+      title: 'Nav',
+      href: '#nav'
+    },
+    {
+      title: 'Dropdown',
+      href: '#dropdown'
+    },
+    {
+      title: 'Form',
+      href: '#form'
+    },
+  ]">
       <div class="mb-5 space-y-0.5">
         <h1 class="font-bold text-2xl text-gray-800">Navbar</h1>
         <p class="text-lg text-gray-500">Navbar Component</p>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="default">
         <div class="card-header">
           Default
         </div>
@@ -43,7 +64,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="colors">
         <div class="card-header">
           Colors
         </div>
@@ -112,7 +133,8 @@
           </div>
         </div>
       </div>
-      <div class="card card-bordered mb-5">
+
+      <div class="card card-bordered mb-5" id="nav">
         <div class="card-header">
           Nav
         </div>
@@ -181,7 +203,8 @@
           </div>
         </div>
       </div>
-      <div class="card card-bordered mb-5">
+
+      <div class="card card-bordered mb-5" id="dropdown">
         <div class="card-header">
           Dropdown
         </div>

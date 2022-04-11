@@ -12,13 +12,22 @@
 <body>
 
   <div id="app">
-    <app-layout>
+    <app-layout :menus="[
+    {
+      title: 'Default',
+      href: '#default'
+    },
+    {
+      title: 'Bordered',
+      href: '#bordered'
+    },
+  ]">
       <div class="mb-5 space-y-0.5">
         <h1 class="font-bold text-2xl text-gray-800">Cards</h1>
         <p class="text-lg text-gray-500">Card Component</p>
       </div>
 
-      <div class="card mb-5">
+      <div class="card mb-5" id="default">
         <div class="card-header">
           Card
         </div>
@@ -34,7 +43,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="bordered">
         <div class="card-header">
           Card Bordered
         </div>

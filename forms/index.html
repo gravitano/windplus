@@ -12,7 +12,12 @@
 <body>
 
   <div id="app">
-    <app-layout>
+    <app-layout :menus="[
+    {
+      title: 'Default',
+      href: '#default'
+    },
+  ]">
       <div class="mb-5 space-y-0.5">
         <h1 class="font-bold text-2xl text-gray-800">Forms</h1>
         <p class="text-lg text-gray-500">Form Component</p>

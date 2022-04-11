@@ -11,7 +11,68 @@
 
 <body>
   <div id="app">
-    <app-layout>
+    <app-layout :menus="[
+    {
+      title: 'Default',
+      href: '#default'
+    },
+    {
+      title: 'Bordered',
+      href: '#bordered'
+    },
+    {
+      title: 'Flush',
+      href: '#flush'
+    },
+    {
+      title: 'Tree',
+      href: '#tree'
+    },
+    {
+      title: 'Hover',
+      href: '#hover'
+    },
+    {
+      title: 'Inline',
+      href: '#inline'
+    },
+    {
+      title: 'State & Colors',
+      href: '#state'
+    },
+    {
+      title: 'Rich Content',
+      href: '#rich-content'
+    },
+    {
+      title: 'Comment List',
+      href: '#comment-list'
+    },
+    {
+      title: 'Notification List',
+      href: '#notification'
+    },
+    {
+      title: 'Contact List',
+      href: '#contact'
+    },
+    {
+      title: 'List with Header',
+      href: '#header'
+    },
+    {
+      title: 'List with Action',
+      href: '#action'
+    },
+    {
+      title: 'Menu',
+      href: '#menu'
+    },
+    {
+      title: 'Multilevel Menu',
+      href: '#multilevel-menu'
+    },
+  ]">
       <div class="mb-5 space-y-0.5">
         <h1 class="font-bold text-2xl text-gray-800">Lists</h1>
         <p class="text-lg text-gray-500">List Component</p>
@@ -19,7 +80,7 @@
 
       <div class="space-y-4">
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="default">
           <div class="card-header">
             List
           </div>
@@ -33,7 +94,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="bordered">
           <div class="card-header">
             List Bordered
           </div>
@@ -47,7 +108,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="flush">
           <div class="card-header">
             List Flush
           </div>
@@ -61,7 +122,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="tree">
           <div class="card-header">
             List Tree
           </div>
@@ -76,7 +137,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="hover">
           <div class="card-header">
             List Hover
           </div>
@@ -90,7 +151,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="inline">
           <div class="card-header">
             List Inline
           </div>
@@ -112,7 +173,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="state">
           <div class="card-header">
             List State
           </div>
@@ -131,7 +192,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="rich-content">
           <div class="card-header">
             Rich Content
           </div>
@@ -179,7 +240,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="comment-list">
           <div class="card-header">
             Comment List
           </div>
@@ -237,7 +298,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="notification">
           <div class="card-header">
             Notification List
           </div>
@@ -301,7 +362,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="contact">
           <div class="card-header">
             Contact List
           </div>
@@ -338,7 +399,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="header">
           <div class="card-header">
             Contact List With Header
           </div>
@@ -404,7 +465,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id='action'>
           <div class="card-header">
             Contact List with Action
           </div>
@@ -493,7 +554,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="menu">
           <div class="card-header">
             List Menu
           </div>
@@ -590,7 +651,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="multilevel-menu">
           <div class="card-header">
             List Menu Multilevel
           </div>

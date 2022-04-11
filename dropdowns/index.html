@@ -15,13 +15,34 @@
 <body>
 
   <div id="app">
-    <app-layout>
+    <app-layout :menus="[
+    {
+      title: 'Default',
+      href: '#default'
+    },
+    {
+      title: 'Dense',
+      href: '#dense'
+    },
+    {
+      title: 'Small',
+      href: '#small'
+    },
+    {
+      title: 'Menu Right',
+      href: '#menu-right'
+    },
+    {
+      title: 'Hover',
+      href: '#hover'
+    },
+  ]">
       <div class="mb-5 space-y-0.5">
         <h1 class="font-bold text-2xl text-gray-800">Dropdowns</h1>
         <p class="text-lg text-gray-500">Dropdown Component</p>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="default">
         <div class="card-header">
           Default
         </div>
@@ -43,7 +64,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="dense">
         <div class="card-header">
           Dense
         </div>
@@ -65,7 +86,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="small">
         <div class="card-header">
           Small
         </div>
@@ -87,7 +108,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="menu-right">
         <div class="card-header">
           Menu Right
         </div>
@@ -111,7 +132,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-40">
+      <div class="card card-bordered mb-40" id="hover">
         <div class="card-header">
           Hover
         </div>

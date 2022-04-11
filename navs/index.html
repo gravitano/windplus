@@ -12,13 +12,62 @@
 <body>
 
   <div id="app">
-    <app-layout>
+    <app-layout :menus="[
+    {
+      title: 'Default',
+      href: '#default'
+    },
+    {
+      title: 'Center',
+      href: '#center'
+    },
+    {
+      title: 'Right Aligned',
+      href: '#right'
+    },
+    {
+      title: 'Vertical',
+      href: '#vertical'
+    },
+    {
+      title: 'Tabs',
+      href: '#tabs'
+    },
+    {
+      title: 'Line',
+      href: '#line'
+    },
+    {
+      title: 'Links',
+      href: '#links'
+    },
+    {
+      title: 'Pills',
+      href: '#pills'
+    },
+    {
+      title: 'Rounded',
+      href: '#rounded'
+    },
+    {
+      title: 'Rounded Bordered',
+      href: '#bordered'
+    },
+    {
+      title: 'Dropdown',
+      href: '#dropdown'
+    },
+    {
+      title: 'Fill',
+      href: '#fill'
+    },
+  ]">
       <div class="mb-5 space-y-0.5">
         <h1 class="font-bold text-2xl text-gray-800">Navs</h1>
         <p class="text-lg text-gray-500">Navigation Component</p>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="default">
         <div class="card-header">
           Default
         </div>
@@ -32,7 +81,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="center">
         <div class="card-header">
           Center
         </div>
@@ -46,7 +95,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="right">
         <div class="card-header">
           Right Aligned
         </div>
@@ -60,7 +109,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id='vertical'>
         <div class="card-header">
           Vertical
         </div>
@@ -74,7 +123,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="tabs">
         <div class="card-header">
           Tabs
         </div>
@@ -88,9 +137,9 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="line">
         <div class="card-header">
-          Tabs Alternative
+          Line
         </div>
         <div class="card-body overflow-x-auto relative">
           <div class="nav nav-tabs-alt">
@@ -102,7 +151,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="links">
         <div class="card-header">
           Links
         </div>
@@ -116,7 +165,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="pills">
         <div class="card-header">
           Pills
         </div>
@@ -130,7 +179,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="rounded">
         <div class="card-header">
           Pills Rounded
         </div>
@@ -144,7 +193,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="bordered">
         <div class="card-header">
           Pills Rounded Bordered
         </div>
@@ -172,7 +221,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="dropdown">
         <div class="card-header">
           Dropdown
         </div>
@@ -200,7 +249,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="fill">
         <div class="card-header">
           Fill
         </div>

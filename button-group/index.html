@@ -15,13 +15,46 @@
 <body>
 
   <div id="app">
-    <app-layout>
+    <app-layout :menus="[
+    {
+      title: 'Basic',
+      href: '#basic'
+    },
+    {
+      title: 'Mixed Styles',
+      href: '#mixed-styles'
+    },
+    {
+      title: 'Outlined',
+      href: '#outlined'
+    },
+    {
+      title: 'Checkbox',
+      href: '#checkbox'
+    },
+    {
+      title: 'Radio',
+      href: '#radio'
+    },
+    {
+      title: 'Toolbar',
+      href: '#toolbar'
+    },
+    {
+      title: 'Nesting',
+      href: '#nesting'
+    },
+    {
+      title: 'Vertical',
+      href: '#vertical'
+    },
+  ]">
       <div class="mb-5 space-y-0.5">
         <h1 class="font-bold text-2xl text-gray-800">Button Group</h1>
         <p class="text-lg text-gray-500">Button Group Component</p>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="basic">
         <div class="card-header">
           Basic
         </div>
@@ -36,7 +69,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="mixed-styles">
         <div class="card-header">
           Mixed Styles
         </div>
@@ -51,7 +84,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="outlined">
         <div class="card-header">
           Outlined
         </div>
@@ -66,7 +99,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="checkbox">
         <div class="card-header">
           Checkbox
         </div>
@@ -86,7 +119,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="radio">
         <div class="card-header">
           Radio
         </div>
@@ -106,7 +139,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="toolbar">
         <div class="card-header">
           Toolbar
         </div>
@@ -132,7 +165,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="nesting">
         <div class="card-header">
           Nesting
         </div>
@@ -157,7 +190,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="vertical">
         <div class="card-header">
           Vertical
         </div>

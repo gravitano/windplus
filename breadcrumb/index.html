@@ -12,13 +12,26 @@
 <body>
 
   <div id="app">
-    <app-layout>
+    <app-layout :menus="[
+    {
+      title: 'Default',
+      href: '#default'
+    },
+    {
+      title: 'Underline',
+      href: '#underline'
+    },
+    {
+      title: 'Arrow',
+      href: '#arrow'
+    },
+  ]">
       <div class="mb-5 space-y-0.5">
         <h1 class="font-bold text-2xl text-gray-800">Breadcrumb</h1>
         <p class="text-lg text-gray-500">Breadcrumb Component</p>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="underline">
         <div class="card-header">
           Default
         </div>
@@ -36,7 +49,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="underline">
         <div class="card-header">
           Underline
         </div>
@@ -52,7 +65,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="arrow">
         <div class="card-header">
           Arrow Icon
         </div>

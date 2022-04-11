@@ -14,14 +14,39 @@
 
 <body>
   <div id="app">
-    <app-layout>
+    <app-layout :menus="[
+      {
+        title: 'Variants',
+        href: '#variants'
+      },
+      {
+        title: 'Dense',
+        href: '#dense'
+      },
+      {
+        title: 'Outlined',
+        href: '#outlined'
+      },
+      {
+        title: 'Bordered',
+        href: '#bordered'
+      },
+      {
+        title: 'Dismissable',
+        href: '#dismissable'
+      },
+      {
+        title: 'Buttons',
+        href: '#buttons'
+      },
+    ]">
       <div class="mb-5 space-y-0.5">
         <h1 class="font-bold text-2xl text-gray-800">Alerts</h1>
         <p class="text-lg text-gray-500">Alert Component</p>
       </div>
 
       <div class="space-y-4">
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="variants">
           <div class="card-header">Alerts Variants</div>
           <div class="card-body">
             <div class="space-y-2">
@@ -134,7 +159,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="dense">
           <div class="card-header">Alert Dense</div>
           <div class="card-body">
             <div class="space-y-2">
@@ -247,7 +272,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id='outlined'>
           <div class="card-header">Alert Outlined</div>
           <div class="card-body">
 
@@ -362,7 +387,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="bordered">
           <div class="card-header">
             Alert Border
           </div>
@@ -478,7 +503,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="dismissable">
           <div class="card-header">Dismissable</div>
           <div class="card-body">
             <div>
@@ -499,7 +524,7 @@
           </div>
         </div>
 
-        <div class="card card-bordered">
+        <div class="card card-bordered" id="buttons">
           <div class="card-header">Buttons</div>
           <div class="card-body">
             <div>

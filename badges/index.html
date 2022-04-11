@@ -12,13 +12,34 @@
 <body>
 
   <div id="app">
-    <app-layout>
+    <app-layout :menus="[
+    {
+      title: 'Heading',
+      href: '#heading'
+    },
+    {
+      title: 'Button',
+      href: '#button'
+    },
+    {
+      title: 'Positioned',
+      href: '#positioned'
+    },
+    {
+      title: 'Colors',
+      href: '#colors'
+    },
+    {
+      title: 'Rounded',
+      href: '#rounded'
+    },
+  ]">
       <div class="mb-5 space-y-0.5">
         <h1 class="font-bold text-2xl text-gray-800">Badges</h1>
         <p class="text-lg text-gray-500">Badge Component</p>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="heading">
         <div class="card-header">
           Heading
         </div>
@@ -33,7 +54,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="button">
         <div class="card-header">
           Button
         </div>
@@ -46,7 +67,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="positioned">
         <div class="card-header">
           Positioned
         </div>
@@ -70,7 +91,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="colors">
         <div class="card-header">
           Colors
         </div>
@@ -88,7 +109,7 @@
         </div>
       </div>
 
-      <div class="card card-bordered mb-5">
+      <div class="card card-bordered mb-5" id="rounded">
         <div class="card-header">
           Rounded
         </div>
