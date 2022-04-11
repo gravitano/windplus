@@ -256,17 +256,19 @@ app.component('app-layout', {
   },
   setup(props) {
     const sidebar = ref(false)
+    const activeHref = ref('')
 
     const scrollTo = menu => {
       document.querySelector(menu.href)?.scrollIntoView({
         behavior: 'smooth',
       })
-      // location.href = menu.href
+      activeHref.value = menu.href
     }
 
     return {
       sidebar,
-      scrollTo
+      scrollTo,
+      activeHref,
     }
   },
   template: `
@@ -275,14 +277,14 @@ app.component('app-layout', {
   <div class="flex flex-col sm:flex-row gap-6 mx-auto" :class="fluid ? '' : 'container py-4'">
     <app-sidebar v-model="sidebar" :hide="hideSidebar"></app-sidebar>
 
-    <main class="w-full flex flex-col sm:flex-row gap-4" :class="hideSidebar ? '' : 'px-4 sm:px-0'">
-      <div class="w-full sm:w-9/12 order-2 sm:order-2">
-        <div class="container mx-auto">
+    <main class="w-full flex gap-4" :class="hideSidebar ? 'flex-col' : 'flex-col sm:flex-row px-4 sm:px-0'">
+      <div class="order-2 sm:order-2" :class="hideSidebar ? '' : 'w-full sm:w-9/12'">
+        <div :class="hideSidebar ? '' : 'container mx-auto'">
           <slot></slot>
         </div>
       </div>
 
-      <div class="w-full sm:w-3/12 sm:h-screen sm:sticky sm:top-20 relative order-1 sm:order-2">
+      <div class="sm:h-screen sm:sticky sm:top-20 relative order-1 sm:order-2" :class="hideSidebar ? 'hidden' : 'w-full sm:w-3/12'">
         <template v-if="menus && menus.length">
           <button type="button" class="font-semibold sm:mb-2 mb-1 text-sm flex gap-2 text-gray-600"
             data-bs-toggle="collapse"
@@ -296,9 +298,9 @@ app.component('app-layout', {
             </svg>
             On this page
           </button>
-          <ul id="collapseExample" class="collapse show list list-tree list-inline list-sm list-hover ml-2.5">
+          <ul id="collapseExample" class="collapse show list list-dense list-tree list-inline list-sm list-hover ml-2.5">
             <li v-for="menu in menus" :key="menu.title">
-              <a :href="menu.href" class="list-item" @click.prevent="scrollTo(menu)">
+              <a :href="menu.href" class="list-item" :class="activeHref === menu.href ? 'active' : ''" @click.prevent="scrollTo(menu)">
                 {{ menu.title }}
               </a>
             </li>
