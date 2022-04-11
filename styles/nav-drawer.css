@@ -18,6 +18,42 @@
   @apply -mx-2 border-b my-1;
 }
 
+.nav-drawer-mini-brand {
+  @apply hidden;
+}
+
+.nav-drawer-mini {
+  @apply w-16 overflow-hidden;
+
+  .nav-drawer-title,
+  .nav-drawer-subtitle {
+    @apply hidden;
+  }
+
+  .nav-drawer-mini-brand {
+    @apply flex justify-center items-center;
+  }
+
+  .list {
+    .list-header {
+      @apply hidden;
+    }
+
+    .list-item {
+      .list-item-content,
+      .list-item-action {
+        @apply hidden;
+      }
+    }
+  }
+
+  .nav-drawer-append {
+    .btn {
+      @apply px-2 py-2;
+    }
+  }
+}
+
 /* dark */
 
 .nav-drawer-dark {
