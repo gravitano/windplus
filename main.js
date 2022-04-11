@@ -65,10 +65,6 @@ app.component('AppHeader', {
         title: 'Components',
         path: '/alerts/'
       },
-      {
-        title: 'Layouts',
-        path: '/layouts/dashboard.html'
-      },
     ])
 
     const openSidebar = () => emit('menu:click')
@@ -105,6 +101,16 @@ app.component('AppHeader', {
         <a v-for="menu in menus" :key="menu.title" class="btn btn-text" :class="activeClass(menu.path, 'btn-primary', 'btn-default')" :href="menu.path">
           {{ menu.title }}
         </a>
+        <div class="dropdown dropdown-hover group">
+          <button class="btn btn-default btn-text" data-bs-toggle="dropdown" aria-expanded="false" id="dLabel">
+            Layouts
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end group-hover:block" aria-labelledby="dLabel">
+            <li><a href="/dashboard/" class="dropdown-item">Dashboard (Light)</a></li>
+            <li><a href="/dashboard-dark/" class="dropdown-item">Dashboard (Dark)</a></li>
+          </ul>
+        </div>
+
         <a class="btn btn-text btn-default" href="https://github.com/gravitano/vite-tailwind-vanilla" target="_blank"
           rel="noopener">GitHub</a>
       </div>
