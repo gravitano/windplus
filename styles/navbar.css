@@ -3,9 +3,45 @@
 }
 
 .navbar-brand {
-  @apply font-semibold text-gray-800;
+  @apply font-semibold;
 }
 
 .navbar-light {
   @apply bg-gray-100;
+}
+
+.navbar-dark {
+  @apply bg-gray-800;
+
+  .navbar-brand {
+    @apply text-white;
+  }
+
+  .nav-item {
+    @apply text-white;
+  }
+}
+
+.navbar-primary {
+  @apply bg-primary-500;
+
+  .navbar-brand {
+    @apply text-white;
+  }
+
+  .nav-item {
+    @apply text-white;
+  }
+}
+
+.navbar-secondary {
+  @apply bg-secondary-500;
+
+  .navbar-brand {
+    @apply text-white;
+  }
+
+  .nav-item {
+    @apply text-white;
+  }
 }
