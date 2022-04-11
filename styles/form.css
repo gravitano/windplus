@@ -20,8 +20,9 @@
   @apply flex w-full border-gray-300 rounded-md transition duration-300 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50;
 }
 
-.form-input-error {
-  @apply focus:border-red-500 focus:ring-red-500 focus:ring-opacity-50;
+.form-input-error,
+.has-error {
+  @apply border-error-500 focus:border-error-500 focus:ring-error-500 focus:ring-opacity-50 placeholder:text-error-700;
 }
 
 input[type='checkbox'] {
