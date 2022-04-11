@@ -31,6 +31,7 @@ export default defineConfig({
         'nav-drawer': resolve(__dirname, 'nav-drawer/index.html'),
         'input-group': resolve(__dirname, 'input-group/index.html'),
         dashboard: resolve(__dirname, 'dashboard/index.html'),
+        'dashboard-dark': resolve(__dirname, 'dashboard-dark/index.html'),
       },
     },
   },
