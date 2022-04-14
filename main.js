@@ -201,6 +201,10 @@ app.component('AppSidebar', {
         title: 'Input Group',
         path: '/input-group/'
       },
+      {
+        title: 'Tooltips',
+        path: '/tooltips/'
+      },
     ])
 
     menus.value.sort((a, b) => {
