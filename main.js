@@ -209,6 +209,10 @@ app.component('AppSidebar', {
         title: 'Toasts',
         path: '/toasts/'
       },
+      {
+        title: 'Popovers',
+        path: '/popovers/'
+      },
     ])
 
     menus.value.sort((a, b) => {
