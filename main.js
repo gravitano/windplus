@@ -103,7 +103,7 @@ app.component('AppHeader', {
         </a>
         <div class="dropdown dropdown-hover group">
           <button class="btn btn-default btn-text" data-bs-toggle="dropdown" aria-expanded="false" id="dLabel">
-            Layouts
+            Samples
           </button>
           <ul class="dropdown-menu dropdown-menu-end group-hover:block" aria-labelledby="dLabel">
             <li><a href="/dashboard/" class="dropdown-item">Dashboard (Light)</a></li>
