@@ -15,13 +15,22 @@ Reusable Tailwind component collection.
 Install the package as dev dependencies:
 
 ```
-npm i -D windplus
+npm i windplus
 ```
 
-Import `windplus` into your `main.js/main.ts`:
+Import `windplus/styles/main` into your tailwind styles:
 
-```ts
-import 'windplus';
+```diff
+- @tailwind base;
+- @tailwind components;
+- @tailwind utilities;
+
++@import 'tailwindcss/base';
++@import 'tailwindcss/components';
+
++@import 'windplus/styles/main';
+
++@import 'tailwindcss/utilities';
 ```
 
 Start using the classes:
