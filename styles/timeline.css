@@ -1,15 +1,17 @@
-.timeline-item {
-  @apply flex gap-3 relative;
-}
+@layer components {
+  .timeline-item {
+    @apply flex gap-3 relative;
+  }
 
-.timeline-number {
-  @apply w-6 h-6 text-xs rounded-full flex items-center justify-center text-white bg-primary-500;
-}
+  .timeline-number {
+    @apply w-6 h-6 text-xs rounded-full flex items-center justify-center text-white bg-primary-500;
+  }
 
-.timeline-line {
-  @apply border-l border-gray-200 absolute left-3 top-6 h-full;
-}
+  .timeline-line {
+    @apply border-l border-gray-200 absolute left-3 top-6 h-full;
+  }
 
-.timeline-title {
-  @apply font-bold text-sm;
+  .timeline-title {
+    @apply font-bold text-sm;
+  }
 }

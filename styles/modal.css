@@ -1,68 +1,70 @@
-.modal {
-  @apply inset-0 fixed overflow-hidden hidden z-50 p-10;
-}
-
-.modal.fade {
-  @apply transition-opacity duration-150;
-}
-
-.modal.show {
-  @apply block;
-}
-
-.modal-dialog {
-  @apply relative my-10 mx-auto w-auto transition duration-300 transform;
-}
-
-.modal.show .modal-dialog {
-  @apply translate-y-full;
-}
-
-.modal.fade .modal-dialog {
-  @apply -translate-y-10;
-}
-
-@media (min-width: 576px) {
-  .modal-dialog {
-    max-width: 500px;
-    margin: 1.75rem auto;
+@layer components {
+  .modal {
+    @apply inset-0 fixed overflow-hidden hidden z-50 p-10;
   }
-}
 
-.modal-content {
-  @apply relative flex flex-col bg-white rounded-md;
-}
+  .modal.fade {
+    @apply transition-opacity duration-150;
+  }
 
-.modal-header {
-  @apply px-4 py-3 border-b flex gap-2 items-center justify-between;
-}
+  .modal.show {
+    @apply block;
+  }
 
-.modal-title {
-  @apply font-semibold text-lg;
-}
+  .modal-dialog {
+    @apply relative my-10 mx-auto w-auto transition duration-300 transform;
+  }
 
-.modal-body {
-  @apply px-4 py-3;
-}
+  .modal.show .modal-dialog {
+    @apply translate-y-full;
+  }
 
-.modal-footer {
-  @apply px-4 py-3 flex gap-2 border-t;
-}
+  .modal.fade .modal-dialog {
+    @apply -translate-y-10;
+  }
 
-.modal-backdrop {
-  @apply bg-black inset-0 fixed transition duration-300;
-}
+  @media (min-width: 576px) {
+    .modal-dialog {
+      max-width: 500px;
+      margin: 1.75rem auto;
+    }
+  }
 
-.modal-backdrop.fade {
-  @apply bg-opacity-0 z-20;
-}
+  .modal-content {
+    @apply relative flex flex-col bg-white rounded-md;
+  }
 
-.modal-backdrop.show {
-  @apply bg-opacity-50;
-}
+  .modal-header {
+    @apply px-4 py-3 border-b flex gap-2 items-center justify-between;
+  }
 
-.modal-dialog-centered {
-  min-height: calc(100% - 3.5rem);
+  .modal-title {
+    @apply font-semibold text-lg;
+  }
 
-  @apply flex items-center justify-center;
+  .modal-body {
+    @apply px-4 py-3;
+  }
+
+  .modal-footer {
+    @apply px-4 py-3 flex gap-2 border-t;
+  }
+
+  .modal-backdrop {
+    @apply bg-black inset-0 fixed transition duration-300;
+  }
+
+  .modal-backdrop.fade {
+    @apply bg-opacity-0 z-20;
+  }
+
+  .modal-backdrop.show {
+    @apply bg-opacity-50;
+  }
+
+  .modal-dialog-centered {
+    min-height: calc(100% - 3.5rem);
+
+    @apply flex items-center justify-center;
+  }
 }

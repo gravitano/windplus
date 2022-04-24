@@ -1,61 +1,63 @@
-.accordion {
-  @apply flex flex-col border rounded;
-}
+@layer components {
+  .accordion {
+    @apply flex flex-col border rounded;
+  }
 
-.accordion-item {
-  @apply flex flex-col;
-}
+  .accordion-item {
+    @apply flex flex-col;
+  }
 
-.accordion-header {
-  @apply border-b;
-}
+  .accordion-header {
+    @apply border-b;
+  }
 
-.accordion-header button {
-  @apply appearance-none flex gap-2 justify-between items-center py-2 px-4 w-full;
-}
+  .accordion-header button {
+    @apply appearance-none flex gap-2 justify-between items-center py-2 px-4 w-full;
+  }
 
-.accordion-body {
-  @apply py-2 px-4 hidden;
-}
+  .accordion-body {
+    @apply py-2 px-4 hidden;
+  }
 
-.accordion-item .accordion-header-icon {
-  @apply transition duration-300;
-}
+  .accordion-item .accordion-header-icon {
+    @apply transition duration-300;
+  }
 
-.accordion-item:last-child .accordion-body,
-.accordion-item:last-of-type .accordion-body {
-  @apply border-b-0;
-}
+  .accordion-item:last-child .accordion-body,
+  .accordion-item:last-of-type .accordion-body {
+    @apply border-b-0;
+  }
 
-/* open */
-.accordion-item.open .accordion-body,
-.accordion-body.show {
-  @apply block border-b;
-}
+  /* open */
+  .accordion-item.open .accordion-body,
+  .accordion-body.show {
+    @apply block border-b;
+  }
 
-.accordion-item.open .accordion-header-icon {
-  @apply rotate-180;
-}
+  .accordion-item.open .accordion-header-icon {
+    @apply rotate-180;
+  }
 
-.accordion-item.open .accordion-header {
-  @apply bg-primary-100 text-primary-500;
-}
+  .accordion-item.open .accordion-header {
+    @apply bg-primary-100 text-primary-500;
+  }
 
-/* flush */
-.accordion.accordion-flush {
-  @apply border-none;
-}
+  /* flush */
+  .accordion.accordion-flush {
+    @apply border-none;
+  }
 
-.accordion.accordion-flush .accordion-item:last-child .accordion-header {
-  @apply border-b-0;
-}
+  .accordion.accordion-flush .accordion-item:last-child .accordion-header {
+    @apply border-b-0;
+  }
 
-.collapse:not(.show) {
-  @apply hidden;
-}
+  .collapse:not(.show) {
+    @apply hidden;
+  }
 
-.collapsing {
-  height: 0;
-  overflow: 'hidden';
-  transition: 'height 0.35s ease';
+  .collapsing {
+    height: 0;
+    overflow: 'hidden';
+    transition: 'height 0.35s ease';
+  }
 }

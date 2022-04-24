@@ -1,126 +1,128 @@
-.table {
-  @apply table-auto min-w-full;
+@layer components {
+  .table {
+    @apply table-auto min-w-full;
 
-  thead {
-    @apply bg-gray-50 text-gray-600;
-
-    tr {
-      th {
-        @apply text-left py-3 px-4 border-b font-semibold;
-      }
-    }
-  }
-
-  tbody {
-    tr {
-      &:not(:last-child) {
-        @apply border-b;
-      }
-
-      td {
-        @apply px-4 py-3;
-      }
-    }
-  }
-
-  &.table-rounded {
     thead {
+      @apply bg-gray-50 text-gray-600;
+
       tr {
         th {
-          &:first-child {
-            @apply rounded-tl-lg;
-          }
-
-          &:last-child {
-            @apply rounded-tr-lg;
-          }
+          @apply text-left py-3 px-4 border-b font-semibold;
         }
       }
     }
 
     tbody {
       tr {
-        &:last-child {
-          td {
+        &:not(:last-child) {
+          @apply border-b;
+        }
+
+        td {
+          @apply px-4 py-3;
+        }
+      }
+    }
+
+    &.table-rounded {
+      thead {
+        tr {
+          th {
             &:first-child {
-              @apply rounded-bl-lg;
+              @apply rounded-tl-lg;
             }
 
             &:last-child {
-              @apply rounded-br-lg;
+              @apply rounded-tr-lg;
+            }
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          &:last-child {
+            td {
+              &:first-child {
+                @apply rounded-bl-lg;
+              }
+
+              &:last-child {
+                @apply rounded-br-lg;
+              }
             }
           }
         }
       }
     }
-  }
 
-  &.table-dense {
-    thead {
-      tr {
-        th {
-          @apply py-2;
+    &.table-dense {
+      thead {
+        tr {
+          th {
+            @apply py-2;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          td {
+            @apply py-2;
+          }
         }
       }
     }
 
-    tbody {
-      tr {
-        td {
-          @apply py-2;
+    &.table-bordered {
+      thead {
+        tr {
+          th {
+            @apply border;
+          }
         }
       }
-    }
-  }
 
-  &.table-bordered {
-    thead {
-      tr {
-        th {
-          @apply border;
-        }
-      }
-    }
-
-    tbody {
-      tr {
-        td {
-          @apply border;
-        }
-      }
-    }
-  }
-
-  &.table-sm {
-    thead {
-      tr {
-        th {
-          @apply text-sm;
+      tbody {
+        tr {
+          td {
+            @apply border;
+          }
         }
       }
     }
 
-    tbody {
-      tr {
-        td {
-          @apply text-sm;
+    &.table-sm {
+      thead {
+        tr {
+          th {
+            @apply text-sm;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          td {
+            @apply text-sm;
+          }
         }
       }
     }
-  }
 
-  &.table-hover {
-    tbody {
-      tr {
-        @apply hover:bg-gray-50;
+    &.table-hover {
+      tbody {
+        tr {
+          @apply hover:bg-gray-50;
+        }
       }
     }
-  }
 
-  &.table-stripped {
-    tbody {
-      tr {
-        @apply even:bg-gray-50;
+    &.table-stripped {
+      tbody {
+        tr {
+          @apply even:bg-gray-50;
+        }
       }
     }
   }

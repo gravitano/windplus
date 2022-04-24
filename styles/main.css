@@ -1,4 +1,7 @@
-@import './tailwind.css';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* @import './tailwind.css'; */
 @import './button.css';
 @import './card.css';
 @import './form.css';
@@ -17,3 +20,6 @@
 @import './nav-drawer.css';
 @import './input-group.css';
 @import './hyperlink.css';
+
+/*  */
+@import 'tailwindcss/utilities';

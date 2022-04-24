@@ -1,74 +1,76 @@
-.input-group {
-  @apply flex items-center relative;
+@layer components {
+  .input-group {
+    @apply flex items-center relative;
 
-  .input-group-text {
-    @apply px-4 py-2 bg-gray-100 border -mx-[1px] border-gray-300;
+    .input-group-text {
+      @apply px-4 py-2 bg-gray-100 border -mx-[1px] border-gray-300;
 
-    &:first-child {
-      @apply rounded-l-md;
+      &:first-child {
+        @apply rounded-l-md;
+      }
+
+      &:last-child {
+        @apply rounded-r-md;
+      }
     }
 
-    &:last-child {
-      @apply rounded-r-md;
-    }
-  }
-
-  .form-select,
-  .form-control,
-  .form-input {
-    @apply rounded-none;
-
-    &:first-child {
-      @apply rounded-l-md;
-    }
-
-    &:last-child {
-      @apply rounded-r-md;
-    }
-  }
-
-  .btn {
-    @apply rounded-none -mx-[1px];
-
-    &:first-child {
-      @apply rounded-l-md;
-    }
-
-    &:last-child {
-      @apply rounded-r-md;
-    }
-  }
-
-  .dropdown .btn {
-    @apply rounded-none -mx-[1px];
-
-    &:first-of-type {
-      @apply rounded-l-md;
-    }
-
-    &:last-of-type {
-      @apply rounded-r-md;
-    }
-  }
-}
-
-/* inner */
-.input-group.input-group-inner {
-  .input-group-text {
-    @apply absolute rounded-none bg-transparent border-none flex items-center justify-center;
-
-    &:first-child {
+    .form-select,
+    .form-control,
+    .form-input {
       @apply rounded-none;
+
+      &:first-child {
+        @apply rounded-l-md;
+      }
+
+      &:last-child {
+        @apply rounded-r-md;
+      }
     }
 
-    &:last-child {
-      @apply right-0;
+    .btn {
+      @apply rounded-none -mx-[1px];
+
+      &:first-child {
+        @apply rounded-l-md;
+      }
+
+      &:last-child {
+        @apply rounded-r-md;
+      }
+    }
+
+    .dropdown .btn {
+      @apply rounded-none -mx-[1px];
+
+      &:first-of-type {
+        @apply rounded-l-md;
+      }
+
+      &:last-of-type {
+        @apply rounded-r-md;
+      }
     }
   }
 
-  .form-select,
-  .form-control,
-  .form-input {
-    @apply rounded-md;
+  /* inner */
+  .input-group.input-group-inner {
+    .input-group-text {
+      @apply absolute rounded-none bg-transparent border-none flex items-center justify-center;
+
+      &:first-child {
+        @apply rounded-none;
+      }
+
+      &:last-child {
+        @apply right-0;
+      }
+    }
+
+    .form-select,
+    .form-control,
+    .form-input {
+      @apply rounded-md;
+    }
   }
 }

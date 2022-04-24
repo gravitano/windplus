@@ -1,177 +1,179 @@
-.list {
-  @apply rounded-md mb-4;
-}
+@layer components {
+  .list {
+    @apply rounded-md mb-4;
+  }
 
-.list-header {
-  @apply text-gray-500 flex gap-1 items-center;
-}
+  .list-header {
+    @apply text-gray-500 flex gap-1 items-center;
+  }
 
-.list-item-header {
-  @apply bg-gray-100 px-2 py-1.5 text-sm border-b text-gray-500 font-semibold;
-}
+  .list-item-header {
+    @apply bg-gray-100 px-2 py-1.5 text-sm border-b text-gray-500 font-semibold;
+  }
 
-/* list small variant */
-.list.list-sm .list-item {
-  @apply text-sm;
-}
+  /* list small variant */
+  .list.list-sm .list-item {
+    @apply text-sm;
+  }
 
-/* list inline variant */
-.list.list-inline .list-item {
-  @apply inline-flex w-auto;
-}
+  /* list inline variant */
+  .list.list-inline .list-item {
+    @apply inline-flex w-auto;
+  }
 
-/* list tree variant */
-.list.list-tree {
-  @apply border-l rounded-none px-2;
-}
+  /* list tree variant */
+  .list.list-tree {
+    @apply border-l rounded-none px-2;
+  }
 
-/* list item */
-.list-item {
-  @apply appearance-none transition duration-300 flex items-center w-full px-3 py-2 rounded-md text-gray-700;
-}
+  /* list item */
+  .list-item {
+    @apply appearance-none transition duration-300 flex items-center w-full px-3 py-2 rounded-md text-gray-700;
+  }
 
-/* list item state */
+  /* list item state */
 
-.list-item:not(:disabled),
-.list-item:not(.disabled),
-.list-item:not(.active) {
-  @apply hover:text-gray-800;
-}
+  .list-item:not(:disabled),
+  .list-item:not(.disabled),
+  .list-item:not(.active) {
+    @apply hover:text-gray-800;
+  }
 
-.list-item:disabled,
-.list-item.disabled,
-.list-item.list-item-disabled {
-  @apply text-gray-400 cursor-not-allowed hover:bg-transparent hover:text-gray-400;
-}
+  .list-item:disabled,
+  .list-item.disabled,
+  .list-item.list-item-disabled {
+    @apply text-gray-400 cursor-not-allowed hover:bg-transparent hover:text-gray-400;
+  }
 
-.list-item.active,
-.list-item.list-item-active {
-  @apply bg-primary-500 text-white hover:!bg-primary-600 hover:!text-white;
-}
+  .list-item.active,
+  .list-item.list-item-active {
+    @apply bg-primary-500 text-white hover:!bg-primary-600 hover:!text-white;
+  }
 
-/* color variants */
-.list-item-primary,
-.list-item.primary {
-  @apply text-white bg-primary-500 border-primary-500 hover:bg-primary-600 hover:border-primary-500 hover:text-white;
-}
+  /* color variants */
+  .list-item-primary,
+  .list-item.primary {
+    @apply text-white bg-primary-500 border-primary-500 hover:bg-primary-600 hover:border-primary-500 hover:text-white;
+  }
 
-.list-item-secondary,
-.list-item.secondary {
-  @apply text-white bg-secondary-500 border-secondary-500 hover:bg-secondary-600 hover:border-secondary-500 hover:text-white;
-}
+  .list-item-secondary,
+  .list-item.secondary {
+    @apply text-white bg-secondary-500 border-secondary-500 hover:bg-secondary-600 hover:border-secondary-500 hover:text-white;
+  }
 
-.list-item-info,
-.list-item.info {
-  @apply text-white bg-info-500 border-info-500 hover:bg-info-600 hover:border-info-500 hover:text-white;
-}
+  .list-item-info,
+  .list-item.info {
+    @apply text-white bg-info-500 border-info-500 hover:bg-info-600 hover:border-info-500 hover:text-white;
+  }
 
-.list-item-warning,
-.list-item.warning {
-  @apply text-white bg-warning-500 border-warning-500 hover:bg-warning-600 hover:border-warning-500 hover:text-white;
-}
+  .list-item-warning,
+  .list-item.warning {
+    @apply text-white bg-warning-500 border-warning-500 hover:bg-warning-600 hover:border-warning-500 hover:text-white;
+  }
 
-.list-item-success,
-.list-item.success {
-  @apply text-white bg-success-500 border-success-500 hover:bg-success-600 hover:border-success-500 hover:text-white;
-}
+  .list-item-success,
+  .list-item.success {
+    @apply text-white bg-success-500 border-success-500 hover:bg-success-600 hover:border-success-500 hover:text-white;
+  }
 
-.list-item-error,
-.list-item.error {
-  @apply text-white bg-error-500 border-error-500 hover:bg-error-600 hover:border-error-500 hover:text-white;
-}
+  .list-item-error,
+  .list-item.error {
+    @apply text-white bg-error-500 border-error-500 hover:bg-error-600 hover:border-error-500 hover:text-white;
+  }
 
-a.list-item {
-  @apply hover:text-gray-800 no-underline hover:no-underline;
-}
+  a.list-item {
+    @apply hover:text-gray-800 no-underline hover:no-underline;
+  }
 
-.list-hover .list-item:not(:disabled):hover,
-.list-hover .list-item:not(.active):hover,
-.list-hover .list-item:not(.list-item-active):hover,
-.list-hover .list-item:not(.list-item-disabled):hover,
-.list-hover .list-item:not(.disabled):hover {
-  @apply bg-gray-100;
-}
+  .list-hover .list-item:not(:disabled):hover,
+  .list-hover .list-item:not(.active):hover,
+  .list-hover .list-item:not(.list-item-active):hover,
+  .list-hover .list-item:not(.list-item-disabled):hover,
+  .list-hover .list-item:not(.disabled):hover {
+    @apply bg-gray-100;
+  }
 
-/* bordered */
-.list-bordered {
-  @apply border;
-}
+  /* bordered */
+  .list-bordered {
+    @apply border;
+  }
 
-.list-bordered .list-item {
-  @apply rounded-none;
-}
+  .list-bordered .list-item {
+    @apply rounded-none;
+  }
 
-.list-bordered .list-item:first-of-type {
-  @apply rounded-t-md;
-}
+  .list-bordered .list-item:first-of-type {
+    @apply rounded-t-md;
+  }
 
-.list-bordered .list-item:last-of-type {
-  @apply rounded-b-md;
-}
+  .list-bordered .list-item:last-of-type {
+    @apply rounded-b-md;
+  }
 
-.list-bordered .list-item:not(:last-of-type) {
-  @apply border-b;
-}
+  .list-bordered .list-item:not(:last-of-type) {
+    @apply border-b;
+  }
 
-/* flush */
-.list-flush {
-  @apply border-transparent;
-}
+  /* flush */
+  .list-flush {
+    @apply border-transparent;
+  }
 
-.list-flush .list-item {
-  @apply rounded-none;
-}
+  .list-flush .list-item {
+    @apply rounded-none;
+  }
 
-.list-flush .list-item:not(:last-of-type) {
-  @apply border-b;
-}
+  .list-flush .list-item:not(:last-of-type) {
+    @apply border-b;
+  }
 
-/* text */
-.list-text .list-item {
-  @apply px-2 py-1;
-}
+  /* text */
+  .list-text .list-item {
+    @apply px-2 py-1;
+  }
 
-/* size */
-.list-dense .list-item {
-  @apply px-2 py-1;
-}
+  /* size */
+  .list-dense .list-item {
+    @apply px-2 py-1;
+  }
 
-/* media content */
-.list-item-media {
-}
+  /* media content */
+  .list-item-media {
+  }
 
-.list-item-content {
-  @apply flex flex-col flex-grow;
-}
+  .list-item-content {
+    @apply flex flex-col flex-grow;
+  }
 
-.list-item-title {
-  @apply font-semibold;
-}
+  .list-item-title {
+    @apply font-semibold;
+  }
 
-.list-item-subtitle {
-  @apply text-gray-600 text-sm;
-}
+  .list-item-subtitle {
+    @apply text-gray-600 text-sm;
+  }
 
-.list-item-body {
-  @apply text-gray-800;
-}
+  .list-item-body {
+    @apply text-gray-800;
+  }
 
-.list-item-subheader {
-  @apply text-xs font-normal text-gray-400;
-}
+  .list-item-subheader {
+    @apply text-xs font-normal text-gray-400;
+  }
 
-.list-item-action {
-  @apply flex gap-2 items-center;
-}
+  .list-item-action {
+    @apply flex gap-2 items-center;
+  }
 
-.list-footer {
-  @apply px-4 py-2;
-}
+  .list-footer {
+    @apply px-4 py-2;
+  }
 
-.list-item-icon {
-  @apply w-6;
-}
+  .list-item-icon {
+    @apply w-6;
+  }
 
-.list-child {
-  @apply mb-0;
+  .list-child {
+    @apply mb-0;
+  }
 }

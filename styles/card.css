@@ -1,28 +1,30 @@
-/* card */
-.card {
-  @apply rounded-md shadow flex flex-col;
-}
+@layer components {
+  /* card */
+  .card {
+    @apply rounded-md shadow flex flex-col;
+  }
 
-.card-header {
-  @apply px-4 pt-3 font-semibold flex text-gray-800 items-center;
-}
+  .card-header {
+    @apply px-4 pt-3 font-semibold flex text-gray-800 items-center;
+  }
 
-.card-body {
-  @apply px-4 py-3 flex flex-col text-gray-700 flex-grow;
-}
+  .card-body {
+    @apply px-4 py-3 flex flex-col text-gray-700 flex-grow;
+  }
 
-.card-footer {
-  @apply px-4 pb-3 flex flex-row gap-2 items-center;
-}
+  .card-footer {
+    @apply px-4 pb-3 flex flex-row gap-2 items-center;
+  }
 
-.card-bordered {
-  @apply border shadow-none;
-}
+  .card-bordered {
+    @apply border shadow-none;
+  }
 
-.card-bordered > .card-header {
-  @apply pb-3 border-b;
-}
+  .card-bordered > .card-header {
+    @apply pb-3 border-b;
+  }
 
-.card-bordered > .card-footer {
-  @apply pt-3 border-t;
+  .card-bordered > .card-footer {
+    @apply pt-3 border-t;
+  }
 }

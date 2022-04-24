@@ -1,43 +1,45 @@
-.dropdown {
-  @apply relative inline w-auto;
-}
+@layer components {
+  .dropdown {
+    @apply relative inline w-auto;
+  }
 
-.dropdown-menu {
-  @apply bg-white border border-gray-300 rounded-md absolute z-20 min-w-[14rem] max-w-fit p-1 hidden;
-}
+  .dropdown-menu {
+    @apply bg-white border border-gray-300 rounded-md absolute z-20 min-w-[14rem] max-w-fit p-1 hidden;
+  }
 
-.dropdown-menu.open,
-.dropdown-menu.show {
-  @apply block;
-}
+  .dropdown-menu.open,
+  .dropdown-menu.show {
+    @apply block;
+  }
 
-.dropdown-item {
-  @apply px-4 py-2 text-gray-600 hover:no-underline hover:bg-gray-100 hover:text-gray-600
-    flex gap-2 w-full transition duration-300 cursor-pointer
-    active:bg-primary-500 active:text-white rounded-md;
-}
+  .dropdown-item {
+    @apply px-4 py-2 text-gray-600 hover:no-underline hover:bg-gray-100 hover:text-gray-600
+      flex gap-2 w-full transition duration-300 cursor-pointer
+      active:bg-primary-500 active:text-white rounded-md;
+  }
 
-.dropdown-item.active {
-  @apply bg-primary-500 text-white;
-}
+  .dropdown-item.active {
+    @apply bg-primary-500 text-white;
+  }
 
-.dropdown-divider {
-  @apply border-b h-1 my-px;
-}
+  .dropdown-divider {
+    @apply border-b h-1 my-px;
+  }
 
-.dropdown.dropdown-dense .dropdown-item {
-  @apply py-1;
-}
+  .dropdown.dropdown-dense .dropdown-item {
+    @apply py-1;
+  }
 
-.dropdown.dropdown-sm .dropdown-item {
-  @apply text-sm;
-}
+  .dropdown.dropdown-sm .dropdown-item {
+    @apply text-sm;
+  }
 
-.dropdown-menu.dropdown-menu-right,
-.dropdown-menu.dropdown-menu-end {
-  @apply right-0;
-}
+  .dropdown-menu.dropdown-menu-right,
+  .dropdown-menu.dropdown-menu-end {
+    @apply right-0;
+  }
 
-.dropdown.dropdown-hover .dropdown-menu {
-  @apply hidden;
+  .dropdown.dropdown-hover .dropdown-menu {
+    @apply hidden;
+  }
 }
