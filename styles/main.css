@@ -16,8 +16,4 @@
 @import './table.css';
 @import './nav-drawer.css';
 @import './input-group.css';
-
-/* hyperlink */
-a {
-  @apply text-blue-500 hover:text-blue-500 hover:underline;
-}
+@import './hyperlink.css';
