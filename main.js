@@ -87,7 +87,7 @@ app.component('AppHeader', {
         </button>
         
         <a href="/" class="font-bold text-blue-500 text-lg">
-          TailwindStrap
+          WindPlus
         </a>
 
         <button class="btn btn-default btn-icon btn-text sm:hidden" @click="toggle">
@@ -241,7 +241,7 @@ app.component('AppSidebar', {
       ">
       <div class="flex sm:hidden items-center justify-between py-3 border-b mb-4 px-4">
         <a class="text-primary-500 text-xl font-semibold text-center">
-          TailwindStrap
+          WindPlus
         </a>
         <button class="btn btn-default btn-icon btn-text" @click="toggle">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

@@ -1,15 +1,36 @@
-# TailwindStrap
+# WindPlus
 
-Tailwind component collection. Inspired by Bootstrap.
+Reusable Tailwind component collection.
 
 > 🚧 Work in progress
 
-## Major Dependencies
+## Features
 
-- Tailwind CSS
-- Vue
+- Rich Components
+- Framework Agnostic
+- ⚡️ Develop Faster
 
-## Setup
+## Installation
+
+Install the package as dev dependencies:
+
+```
+npm i -D windplus
+```
+
+Import `windplus` into your `main.js/main.ts`:
+
+```ts
+import 'windplus';
+```
+
+Start using the classes:
+
+```html
+<button class="btn btn-primary">Click Me</button>
+```
+
+## Development
 
 **Install dependencies**:
 

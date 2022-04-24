@@ -1,6 +1,5 @@
 {
-  "name": "vite-vanilla-tailwind",
-  "private": true,
+  "name": "windplus",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
