@@ -6,7 +6,7 @@ module.exports = {
     "./index.html",
     "./*/index.html",
     './main.js',
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./src/**/*.{vue,js,ts,jsx,tsx,md}",
   ],
   theme: {
     extend: {

@@ -101,6 +101,10 @@ const isHomePage = computed(() => route.name === 'index');
 <style>
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
-  @apply text-sm;
+  @apply text-sm !important;
+}
+
+.code-block {
+  @apply px-4 py-2 bg-gray-100 border-t;
 }
 </style>
