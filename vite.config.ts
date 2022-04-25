@@ -17,7 +17,7 @@ export default defineConfig({
         cards: resolve(__dirname, 'cards/index.html'),
         buttons: resolve(__dirname, 'buttons/index.html'),
         forms: resolve(__dirname, 'forms/index.html'),
-        lists: resolve(__dirname, 'lists/index.html'),
+        'list-group': resolve(__dirname, 'list-group/index.html'),
         timelines: resolve(__dirname, 'timelines/index.html'),
         navs: resolve(__dirname, 'navs/index.html'),
         breadcrumb: resolve(__dirname, 'breadcrumb/index.html'),
