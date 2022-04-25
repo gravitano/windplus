@@ -1,14 +1,11 @@
-import './styles/main.css'
+import '../styles/main.css'
 import {createApp, ref, toRefs, watch, onMounted, onUnmounted} from 'vue'
+import App from './App.vue'
 
 window.__VUE_OPTIONS_API__ = true
 window.__VUE_PROD_DEVTOOLS__ = false
 
-const app = createApp({
-  data: () => ({
-    showSidebar: false
-  })
-})
+const app = createApp(App)
 
 const activeClass = (path, classes = 'active', inactiveClass = 'inactive') => {
   const currentPath = window.location.pathname
