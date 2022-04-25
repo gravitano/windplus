@@ -249,3 +249,7 @@
     </div>
   </div>
 </div>
+
+```html
+<div class="accordion accordion-flush" id="accordionExample2">...</div>
+```
