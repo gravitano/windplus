@@ -96,4 +96,9 @@ const scrollTo = (menu) => {
   <app-footer></app-footer>
 </template>
 
-<style scoped></style>
+<style>
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+  @apply text-sm;
+}
+</style>

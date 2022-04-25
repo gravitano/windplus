@@ -4,6 +4,11 @@ import App from './App.vue';
 import router from './router';
 import { createHead } from '@vueuse/head'; // <--
 
+import 'prismjs';
+import 'prismjs/plugins/toolbar/prism-toolbar';
+import 'prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard';
+import 'prismjs/themes/prism-okaidia.css';
+
 const app = createApp(App);
 
 app.use(router);

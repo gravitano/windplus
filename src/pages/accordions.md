@@ -85,7 +85,7 @@
   
 </div>
 
-```
+```html
 <div class="accordion" id="accordionExample">
   <div class="accordion-item">
     <div class="accordion-header">
@@ -119,10 +119,10 @@
       aria-labelledby="headingOne"
       data-bs-parent="#accordionExample"
     >
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
-      quis unde voluptatum, exercitationem tempore, eligendi
-      perspiciatis magnam nam atque asperiores esse perferendis porro
-      molestias necessitatibus aperiam saepe mollitia eos sunt.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque quis unde
+      voluptatum, exercitationem tempore, eligendi perspiciatis magnam nam atque
+      asperiores esse perferendis porro molestias necessitatibus aperiam saepe
+      mollitia eos sunt.
     </div>
   </div>
   <div class="accordion-item">
@@ -157,10 +157,10 @@
       aria-labelledby="headingOne"
       data-bs-parent="#accordionExample"
     >
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
-      quis unde voluptatum, exercitationem tempore, eligendi
-      perspiciatis magnam nam atque asperiores esse perferendis porro
-      molestias necessitatibus aperiam saepe mollitia eos sunt.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque quis unde
+      voluptatum, exercitationem tempore, eligendi perspiciatis magnam nam atque
+      asperiores esse perferendis porro molestias necessitatibus aperiam saepe
+      mollitia eos sunt.
     </div>
   </div>
 </div>
