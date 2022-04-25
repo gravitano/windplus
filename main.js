@@ -97,12 +97,13 @@ app.component('AppHeader', {
         </button>
       </div>
 
-      <div class="space-x-0 flex" v-if="isOpen">
-        <a v-for="menu in menus" :key="menu.title" class="btn btn-text" :class="activeClass(menu.path, 'btn-primary', 'btn-default')" :href="menu.path">
+      <div class="nav gap-0" v-if="isOpen">
+        <a v-for="menu in menus" :key="menu.title" class="nav-item px-2 sm:px-4 font-semibold" :class="activeClass(menu.path, 'active', '')" :href="menu.path">
           {{ menu.title }}
         </a>
+
         <div class="dropdown dropdown-hover group">
-          <button class="btn btn-default btn-text" data-bs-toggle="dropdown" aria-expanded="false" id="dLabel">
+          <button class="px-2 sm:px-4 nav-item font-semibold" data-bs-toggle="dropdown" aria-expanded="false" id="dLabel">
             Samples
           </button>
           <ul class="dropdown-menu dropdown-menu-end group-hover:block" aria-labelledby="dLabel">
@@ -111,10 +112,10 @@ app.component('AppHeader', {
           </ul>
         </div>
 
-        <a class="btn btn-text btn-default" href="https://github.com/gravitano/vite-tailwind-vanilla" target="_blank"
+        <a class="nav-item font-semibold px-2 sm:px-4" href="https://github.com/gravitano/vite-tailwind-vanilla" target="_blank"
           rel="noopener">
           GitHub
-          <i class="ri-external-link-line"></i>
+          <i class="ri-external-link-line ml-2"></i>
         </a>
       </div>
     </div>
