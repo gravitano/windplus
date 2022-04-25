@@ -4,15 +4,19 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "release": "standard-version",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
     "autoprefixer": "^10.4.4",
+    "conventional-changelog-cli": "^2.2.2",
     "husky": "^7.0.4",
     "postcss": "^8.4.12",
     "postcss-import": "^14.1.0",
+    "standard-version": "^9.3.2",
     "tailwindcss": "^3.0.23",
     "vite": "^2.8.0"
   },
