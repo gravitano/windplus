@@ -4,6 +4,7 @@ specifiers:
   '@commitlint/cli': ^16.2.3
   '@commitlint/config-conventional': ^16.2.1
   '@tailwindcss/forms': ^0.5.0
+  '@vitejs/plugin-vue': ^2.3.1
   autoprefixer: ^10.4.4
   conventional-changelog-cli: ^2.2.2
   husky: ^7.0.4
@@ -16,6 +17,7 @@ specifiers:
 
 dependencies:
   '@tailwindcss/forms': 0.5.0_tailwindcss@3.0.23
+  '@vitejs/plugin-vue': 2.3.1_vite@2.8.6+vue@3.2.31
   vue: 3.2.31
 
 devDependencies:
@@ -296,6 +298,17 @@ packages:
   /@types/parse-json/4.0.0:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
     dev: true
+
+  /@vitejs/plugin-vue/2.3.1_vite@2.8.6+vue@3.2.31:
+    resolution: {integrity: sha512-YNzBt8+jt6bSwpt7LP890U1UcTOIZZxfpE5WOJ638PNxSEKOqAi0+FSKS0nVeukfdZ0Ai/H7AFd6k3hayfGZqQ==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      vite: ^2.5.10
+      vue: ^3.2.25
+    dependencies:
+      vite: 2.8.6
+      vue: 3.2.31
+    dev: false
 
   /@vue/compiler-core/3.2.31:
     resolution: {integrity: sha512-aKno00qoA4o+V/kR6i/pE+aP+esng5siNAVQ422TkBNM6qA4veXiZbSe8OTXHXquEi/f6Akc+nLfB4JGfe4/WQ==}
