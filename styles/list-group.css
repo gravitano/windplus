@@ -12,7 +12,7 @@
   }
 
   /* list small variant */
-  .list-group.list-sm .list-group-item {
+  .list-group.list-group-sm .list-group-item {
     @apply text-sm;
   }
 

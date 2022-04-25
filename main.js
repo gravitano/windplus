@@ -258,7 +258,7 @@ app.component('AppSidebar', {
           </svg>
           Components
         </button>
-        <ul class="list list-dense list-hover list-sm list-inline list-tree ml-2">
+        <ul class="list-group list-dense list-hover list-group-sm list-inline list-tree ml-2">
           <li v-for="menu in menus" :key="menu.title">
             <a :href="menu.path" class="list-group-item" :class="activeClass(menu.path)">
               {{ menu.title }}
@@ -328,7 +328,7 @@ app.component('app-layout', {
             </svg>
             On this page
           </button>
-          <ul id="collapseExample" class="collapse show list list-dense list-tree list-inline list-sm list-hover ml-2.5">
+          <ul id="collapseExample" class="collapse show list-group list-dense list-tree list-inline list-group-sm list-hover ml-2.5">
             <li v-for="menu in menus" :key="menu.title">
               <a :href="menu.href" class="list-group-item" :class="activeHref === menu.href ? 'active' : ''" @click.prevent="scrollTo(menu)">
                 {{ menu.title }}
