@@ -38,7 +38,7 @@ const scrollTo = (menu) => {
         class="order-2 sm:order-2"
         :class="hideSidebar ? '' : 'w-full sm:w-9/12'"
       >
-        <div :class="hideSidebar ? '' : 'container mx-auto'">
+        <div :class="hideSidebar ? '' : 'container mx-auto prose'">
           <router-view />
         </div>
       </div>
