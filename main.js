@@ -112,7 +112,10 @@ app.component('AppHeader', {
         </div>
 
         <a class="btn btn-text btn-default" href="https://github.com/gravitano/vite-tailwind-vanilla" target="_blank"
-          rel="noopener">GitHub</a>
+          rel="noopener">
+          GitHub
+          <i class="ri-external-link-line"></i>
+        </a>
       </div>
     </div>
   </header>
