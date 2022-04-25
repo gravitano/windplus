@@ -2,9 +2,11 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import { fileURLToPath, URL } from 'url';
 import vue from '@vitejs/plugin-vue';
+import Pages from 'vite-plugin-pages';
+import Layouts from 'vite-plugin-vue-layouts';
 
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [vue(), Pages(), Layouts()],
   resolve: {
     alias: {
       vue: 'vue/dist/vue.esm-bundler.js',
