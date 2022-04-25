@@ -1,11 +1,12 @@
 import { toRefs, ref, onMounted, onUnmounted, watch } from 'vue';
+import { useRoute } from 'vue-router';
 
 export const activeClass = (
-  path,
+  path: string,
   classes = 'active',
   inactiveClass = 'inactive'
 ) => {
-  const currentPath = window.location.pathname;
+  const currentPath = useRoute().path;
   return currentPath === path ? classes : inactiveClass;
 };
 
