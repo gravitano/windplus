@@ -12,13 +12,13 @@ Reusable Tailwind component collection.
 
 ## Installation
 
-Install the package as dev dependencies:
+Install `windplus` and `@tailwindcss/forms`:
 
 ```
-npm i windplus
+npm i windplus @tailwindcss/forms
 ```
 
-Import `windplus/styles/main` into your tailwind styles:
+Import `windplus/styles/main.css` into your tailwind main styles. E.g. on your `src/index.css`:
 
 ```diff
 - @tailwind base;
@@ -31,6 +31,35 @@ Import `windplus/styles/main` into your tailwind styles:
 +@import 'windplus/styles/main';
 
 +@import 'tailwindcss/utilities';
+```
+
+Extend tailwind config like so:
+
+```js
+const colors = require('tailwindcss/colors');
+
+module.exports = {
+  darkMode: 'class',
+  content: [
+    './index.html',
+    './*/index.html',
+    './main.js',
+    './src/**/*.{vue,js,ts,jsx,tsx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: colors.blue,
+        secondary: colors.pink,
+        info: colors.sky,
+        warning: colors.amber,
+        error: colors.red,
+        success: colors.emerald,
+      },
+    },
+  },
+  plugins: [require('@tailwindcss/forms')],
+};
 ```
 
 Start using the classes:
