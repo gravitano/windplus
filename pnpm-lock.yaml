@@ -11,6 +11,8 @@ specifiers:
   autoprefixer: ^10.4.4
   conventional-changelog-cli: ^2.2.2
   husky: ^7.0.4
+  markdown-it-anchor: ^8.6.2
+  markdown-it-prism: ^2.2.4
   postcss: ^8.4.12
   postcss-import: ^14.1.0
   standard-version: ^9.3.2
@@ -39,6 +41,8 @@ devDependencies:
   autoprefixer: 10.4.4_postcss@8.4.12
   conventional-changelog-cli: 2.2.2
   husky: 7.0.4
+  markdown-it-anchor: 8.6.2
+  markdown-it-prism: 2.2.4
   postcss: 8.4.12
   postcss-import: 14.1.0_postcss@8.4.12
   standard-version: 9.3.2
@@ -2159,6 +2163,20 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /markdown-it-anchor/8.6.2:
+    resolution: {integrity: sha512-JNaekTlIwwyYGBN3zifZDxgz4bSL8sbEj58fdTZGmPSMMGXBZapFjcZk2I33Jy79c1fvCKHpF7MA/67FOTjvzA==}
+    peerDependencies:
+      '@types/markdown-it': '*'
+      markdown-it: '*'
+    dev: true
+
+  /markdown-it-prism/2.2.4:
+    resolution: {integrity: sha512-7oQVppKjiZqVQo7s7eLTIs3o/0hdvqAWDW8lvRel6eUCGD4iXjKbSZjvdHZFA2ZnCkQUF47kbvtWZDVQrv7zyQ==}
+    engines: {node: '>=6.0.0'}
+    dependencies:
+      prismjs: 1.28.0
+    dev: true
+
   /markdown-it/13.0.0:
     resolution: {integrity: sha512-WArlIpVFvVwb8t3wgJuOsbMLhNWlzuQM7H2qXmuUEnBtXRqKjLjwFUMbZOyJgHygVZSjvcLR4EcXcRilqMavrA==}
     hasBin: true
@@ -2541,6 +2559,11 @@ packages:
       nanoid: 3.3.1
       picocolors: 1.0.0
       source-map-js: 1.0.2
+
+  /prismjs/1.28.0:
+    resolution: {integrity: sha512-8aaXdYvl1F7iC7Xm1spqSaY/OJBpYW3v+KJ+F17iYxvdc8sfjW194COK5wVhMZX45tGteiBQgdvD/nhxcRwylw==}
+    engines: {node: '>=6'}
+    dev: true
 
   /process-nextick-args/2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}

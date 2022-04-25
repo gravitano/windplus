@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite';
-import { resolve } from 'path';
 import { fileURLToPath, URL } from 'url';
 import vue from '@vitejs/plugin-vue';
 import Pages from 'vite-plugin-pages';
@@ -13,6 +12,17 @@ export default defineConfig({
     }),
     Markdown({
       headEnabled: true, // <--
+      // markdownItOptions: {
+      //   html: true,
+      //   linkify: true,
+      //   typographer: true,
+      // },
+      markdownItSetup(md) {
+        // add anchor links to your H[x] tags
+        md.use(require('markdown-it-anchor'));
+        // add code syntax highlighting with Prism
+        md.use(require('markdown-it-prism'));
+      },
     }),
     Pages({
       extensions: ['vue', 'md'],
