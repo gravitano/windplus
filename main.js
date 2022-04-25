@@ -150,8 +150,8 @@ app.component('AppSidebar', {
         path: '/forms/'
       },
       {
-        title: 'Lists',
-        path: '/lists/'
+        title: 'List Group',
+        path: '/list-group/'
       },
       {
         title: 'Timelines',
@@ -260,7 +260,7 @@ app.component('AppSidebar', {
         </button>
         <ul class="list list-dense list-hover list-sm list-inline list-tree ml-2">
           <li v-for="menu in menus" :key="menu.title">
-            <a :href="menu.path" class="list-item" :class="activeClass(menu.path)">
+            <a :href="menu.path" class="list-group-item" :class="activeClass(menu.path)">
               {{ menu.title }}
             </a>
           </li>
@@ -330,7 +330,7 @@ app.component('app-layout', {
           </button>
           <ul id="collapseExample" class="collapse show list list-dense list-tree list-inline list-sm list-hover ml-2.5">
             <li v-for="menu in menus" :key="menu.title">
-              <a :href="menu.href" class="list-item" :class="activeHref === menu.href ? 'active' : ''" @click.prevent="scrollTo(menu)">
+              <a :href="menu.href" class="list-group-item" :class="activeHref === menu.href ? 'active' : ''" @click.prevent="scrollTo(menu)">
                 {{ menu.title }}
               </a>
             </li>

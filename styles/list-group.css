@@ -1,95 +1,95 @@
 @layer components {
-  .list {
-    @apply rounded-md mb-4;
+  .list-group {
+    @apply rounded-md mb-4 list-none;
   }
 
   .list-header {
     @apply text-gray-500 flex gap-1 items-center;
   }
 
-  .list-item-header {
+  .list-group-item-header {
     @apply bg-gray-100 px-2 py-1.5 text-sm border-b text-gray-500 font-semibold;
   }
 
   /* list small variant */
-  .list.list-sm .list-item {
+  .list-group.list-sm .list-group-item {
     @apply text-sm;
   }
 
   /* list inline variant */
-  .list.list-inline .list-item {
+  .list-group.list-inline .list-group-item {
     @apply inline-flex w-auto;
   }
 
   /* list tree variant */
-  .list.list-tree {
+  .list-group.list-tree {
     @apply border-l rounded-none px-2;
   }
 
   /* list item */
-  .list-item {
-    @apply appearance-none transition duration-300 flex items-center w-full px-3 py-2 rounded-md text-gray-700;
+  .list-group-item {
+    @apply list-none appearance-none transition duration-300 flex items-center w-full px-3 py-2 rounded-md text-gray-700;
   }
 
   /* list item state */
 
-  .list-item:not(:disabled),
-  .list-item:not(.disabled),
-  .list-item:not(.active) {
+  .list-group-item:not(:disabled),
+  .list-group-item:not(.disabled),
+  .list-group-item:not(.active) {
     @apply hover:text-gray-800;
   }
 
-  .list-item:disabled,
-  .list-item.disabled,
-  .list-item.list-item-disabled {
+  .list-group-item:disabled,
+  .list-group-item.disabled,
+  .list-group-item.list-group-item-disabled {
     @apply text-gray-400 cursor-not-allowed hover:bg-transparent hover:text-gray-400;
   }
 
-  .list-item.active,
-  .list-item.list-item-active {
+  .list-group-item.active,
+  .list-group-item.list-group-item-active {
     @apply bg-primary-500 text-white hover:!bg-primary-600 hover:!text-white;
   }
 
   /* color variants */
-  .list-item-primary,
-  .list-item.primary {
+  .list-group-item-primary,
+  .list-group-item.primary {
     @apply text-white bg-primary-500 border-primary-500 hover:bg-primary-600 hover:border-primary-500 hover:text-white;
   }
 
-  .list-item-secondary,
-  .list-item.secondary {
+  .list-group-item-secondary,
+  .list-group-item.secondary {
     @apply text-white bg-secondary-500 border-secondary-500 hover:bg-secondary-600 hover:border-secondary-500 hover:text-white;
   }
 
-  .list-item-info,
-  .list-item.info {
+  .list-group-item-info,
+  .list-group-item.info {
     @apply text-white bg-info-500 border-info-500 hover:bg-info-600 hover:border-info-500 hover:text-white;
   }
 
-  .list-item-warning,
-  .list-item.warning {
+  .list-group-item-warning,
+  .list-group-item.warning {
     @apply text-white bg-warning-500 border-warning-500 hover:bg-warning-600 hover:border-warning-500 hover:text-white;
   }
 
-  .list-item-success,
-  .list-item.success {
+  .list-group-item-success,
+  .list-group-item.success {
     @apply text-white bg-success-500 border-success-500 hover:bg-success-600 hover:border-success-500 hover:text-white;
   }
 
-  .list-item-error,
-  .list-item.error {
+  .list-group-item-error,
+  .list-group-item.error {
     @apply text-white bg-error-500 border-error-500 hover:bg-error-600 hover:border-error-500 hover:text-white;
   }
 
-  a.list-item {
+  a.list-group-item {
     @apply hover:text-gray-800 no-underline hover:no-underline;
   }
 
-  .list-hover .list-item:not(:disabled):hover,
-  .list-hover .list-item:not(.active):hover,
-  .list-hover .list-item:not(.list-item-active):hover,
-  .list-hover .list-item:not(.list-item-disabled):hover,
-  .list-hover .list-item:not(.disabled):hover {
+  .list-hover .list-group-item:not(:disabled):hover,
+  .list-hover .list-group-item:not(.active):hover,
+  .list-hover .list-group-item:not(.list-group-item-active):hover,
+  .list-hover .list-group-item:not(.list-group-item-disabled):hover,
+  .list-hover .list-group-item:not(.disabled):hover {
     @apply bg-gray-100;
   }
 
@@ -98,19 +98,19 @@
     @apply border;
   }
 
-  .list-bordered .list-item {
+  .list-bordered .list-group-item {
     @apply rounded-none;
   }
 
-  .list-bordered .list-item:first-of-type {
+  .list-bordered .list-group-item:first-of-type {
     @apply rounded-t-md;
   }
 
-  .list-bordered .list-item:last-of-type {
+  .list-bordered .list-group-item:last-of-type {
     @apply rounded-b-md;
   }
 
-  .list-bordered .list-item:not(:last-of-type) {
+  .list-bordered .list-group-item:not(:last-of-type) {
     @apply border-b;
   }
 
@@ -119,49 +119,49 @@
     @apply border-transparent;
   }
 
-  .list-flush .list-item {
+  .list-flush .list-group-item {
     @apply rounded-none;
   }
 
-  .list-flush .list-item:not(:last-of-type) {
+  .list-flush .list-group-item:not(:last-of-type) {
     @apply border-b;
   }
 
   /* text */
-  .list-text .list-item {
+  .list-text .list-group-item {
     @apply px-2 py-1;
   }
 
   /* size */
-  .list-dense .list-item {
+  .list-dense .list-group-item {
     @apply px-2 py-1;
   }
 
   /* media content */
-  .list-item-media {
+  .list-group-item-media {
   }
 
-  .list-item-content {
+  .list-group-item-content {
     @apply flex flex-col flex-grow;
   }
 
-  .list-item-title {
+  .list-group-item-title {
     @apply font-semibold;
   }
 
-  .list-item-subtitle {
+  .list-group-item-subtitle {
     @apply text-gray-600 text-sm;
   }
 
-  .list-item-body {
+  .list-group-item-body {
     @apply text-gray-800;
   }
 
-  .list-item-subheader {
+  .list-group-item-subheader {
     @apply text-xs font-normal text-gray-400;
   }
 
-  .list-item-action {
+  .list-group-item-action {
     @apply flex gap-2 items-center;
   }
 
@@ -169,7 +169,7 @@
     @apply px-4 py-2;
   }
 
-  .list-item-icon {
+  .list-group-item-icon {
     @apply w-6;
   }
 

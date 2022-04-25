@@ -40,9 +40,9 @@
         @apply hidden;
       }
 
-      .list-item {
-        .list-item-content,
-        .list-item-action {
+      .list-group-item {
+        .list-group-item-content,
+        .list-group-item-action {
           @apply hidden;
         }
       }
@@ -72,23 +72,23 @@
       @apply border-gray-800;
     }
 
-    .list {
+    .list-group {
       .list-header {
         @apply text-gray-400;
       }
 
-      .list-item {
+      .list-group-item {
         @apply text-gray-400 hover:text-gray-200 hover:bg-gray-800;
 
         &:hover {
-          .list-item-title,
-          .list-item-subtitle {
+          .list-group-item-title,
+          .list-group-item-subtitle {
             @apply text-gray-200;
           }
         }
 
-        .list-item-title,
-        .list-item-subtitle {
+        .list-group-item-title,
+        .list-group-item-subtitle {
           @apply text-gray-400;
         }
       }
