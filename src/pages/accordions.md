@@ -82,8 +82,9 @@
       </div>
     </div>
   </div>
-  
-</div>
+    <div class="code-block">
+<details>
+<summary>View Code</summary>
 
 ```html
 <div class="accordion" id="accordionExample">
@@ -165,6 +166,11 @@
   </div>
 </div>
 ```
+
+</details>
+    </div>
+  
+</div>
 
 <div class="card card-bordered mb-5" id="flush">
   <div class="card-header">Flush</div>
@@ -248,8 +254,14 @@
       </div>
     </div>
   </div>
-</div>
+    <div class="code-block">
+<details>
+<summary>View Code</summary>
 
 ```html
 <div class="accordion accordion-flush" id="accordionExample2">...</div>
 ```
+
+</details>
+    </div>
+</div>
