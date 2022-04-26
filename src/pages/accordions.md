@@ -1,7 +1,18 @@
 # Accordion
 
+## Classes
+
+| Class Name         | Description       |
+| :----------------- | :---------------- |
+| `accordion`        | Accordion Wrapper |
+| `accordion-item`   | Accordion Item    |
+| `accordion-header` | Accordion Header  |
+| `accordion-body`   | Accordion Header  |
+
+## Default
+
 <div class="card card-bordered mb-5" id="default">
-  <div class="card-header">Default</div>
+  <div class="card-header">Preview</div>
   <div class="card-body">
     <div class="accordion" id="accordionExample">
       <div class="accordion-item">
@@ -172,8 +183,10 @@
   
 </div>
 
+## Flush
+
 <div class="card card-bordered mb-5" id="flush">
-  <div class="card-header">Flush</div>
+  <div class="card-header">Preview</div>
   <div class="card-body">
     <div class="accordion accordion-flush" id="accordionExample2">
       <div class="accordion-item">
