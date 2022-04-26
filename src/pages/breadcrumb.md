@@ -1,5 +1,15 @@
 # Breadcrumb
 
+## Classes
+
+| Class Name               | Description                |
+| :----------------------- | :------------------------- |
+| `breadcrumb`             | Breadcrumb Wrapper         |
+| `breadcrumb-underline`   | Breadcrumb Underline Style |
+| `breadcrumb-item`        | Breadcrumb Item            |
+| `breadcrumb-item active` | Active Breadcrumb Item     |
+| `breadcrumb-divider`     | Breadcrumb Divider         |
+
 ## Default
 
 <div class="card card-bordered mb-5" id="underline">
@@ -138,13 +148,3 @@
   </div>
   <!-- ./code-block -->
 </div>
-
-## Classes
-
-| Class Name               | Description                |
-| :----------------------- | :------------------------- |
-| `breadcrumb`             | Breadcrumb Wrapper         |
-| `breadcrumb-underline`   | Breadcrumb Underline Style |
-| `breadcrumb-item`        | Breadcrumb Item            |
-| `breadcrumb-item active` | Active Breadcrumb Item     |
-| `breadcrumb-divider`     | Breadcrumb Divider         |
