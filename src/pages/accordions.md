@@ -1,7 +1,3 @@
-<script setup>
-import Docs from '@/components/Docs.vue'
-</script>
-
 # Accordion
 
 ## Classes
