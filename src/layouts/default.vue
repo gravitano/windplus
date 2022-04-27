@@ -101,7 +101,7 @@ const isHomePage = computed(() => route.name === 'index');
 <style>
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
-  @apply text-sm !important;
+  @apply text-sm my-0 rounded-t-none !important;
 }
 
 .code-block {

@@ -4,6 +4,7 @@ import vue from '@vitejs/plugin-vue';
 import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
 import Markdown from 'vite-plugin-md';
+import Components from 'unplugin-vue-components/vite';
 
 export default defineConfig({
   plugins: [
@@ -28,6 +29,9 @@ export default defineConfig({
       extensions: ['vue', 'md'],
     }),
     Layouts(),
+    Components({
+      /* options */
+    }),
   ],
   resolve: {
     alias: {
