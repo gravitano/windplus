@@ -10,24 +10,17 @@
 
 ## Heading
 
-<div class="card card-bordered mb-5" id="heading">
-  <div class="card-header">
-    Preview
-  </div>
-  <div class="card-body flex-wrap flex-row gap-6">
-    <h1 class="text-4xl font-semibold">Example heading <span class="badge badge-secondary text-4xl">New</span>
-    </h1>
-    <h2 class="text-3xl font-semibold">Example heading <span class="badge badge-secondary">New</span></h2>
-    <h3 class="text-2xl font-semibold">Example heading <span class="badge badge-secondary">New</span></h3>
-    <h4 class="text-xl font-semibold">Example heading <span class="badge badge-secondary">New</span></h4>
-    <h5 class="text-lg font-semibold">Example heading <span class="badge badge-secondary">New</span></h5>
-    <h6 class="text-base font-semibold">Example heading <span class="badge badge-secondary">New</span></h6>
-  </div>
-  <!-- code-block -->
-  <div class="code-block">
-<!-- details -->
-<details>
-<summary>View Code</summary>
+<docs>
+<template #preview>
+<h1 class="text-4xl font-semibold">Example heading <span class="badge badge-secondary text-4xl">New</span>
+</h1>
+<h2 class="text-3xl font-semibold">Example heading <span class="badge badge-secondary">New</span></h2>
+<h3 class="text-2xl font-semibold">Example heading <span class="badge badge-secondary">New</span></h3>
+<h4 class="text-xl font-semibold">Example heading <span class="badge badge-secondary">New</span></h4>
+<h5 class="text-lg font-semibold">Example heading <span class="badge badge-secondary">New</span></h5>
+<h6 class="text-base font-semibold">Example heading <span class="badge badge-secondary">New</span></h6>
+</template>
+<template #code>
 
 ```html
 <h1 class="text-4xl font-semibold">
@@ -50,30 +43,18 @@
 </h6>
 ```
 
-</details>
-<!-- ./details -->
-  </div>
-  <!-- ./code-block -->
-</div>
+</template>
+</docs>
 
 ## Button
 
-<div class="card card-bordered mb-5" id="button">
-  <div class="card-header">
-    Button
-  </div>
-  <div class="card-body flex-wrap flex-row">
-    <div>
-      <button type="button" class="btn btn-primary">
-        Notifications <span class="badge badge-secondary">4</span>
-      </button>
-    </div>
-  </div>
-  <!-- code-block -->
-  <div class="code-block">
-<!-- details -->
-<details>
-<summary>View Code</summary>
+<docs>
+<template #preview>
+<button type="button" class="btn btn-primary">
+  Notifications <span class="badge badge-secondary">4</span>
+</button>
+</template>
+<template #code>
 
 ```html
 <button type="button" class="btn btn-primary">
@@ -81,11 +62,8 @@
 </button>
 ```
 
-</details>
-<!-- ./details -->
-  </div>
-  <!-- ./code-block -->
-</div>
+</template>
+</docs>
 
 ## Positioned
 

@@ -18,8 +18,8 @@ const tabs = ['Preview', 'Code'];
         {{ tab }}
       </button>
     </div>
-    <div class="card-body" v-if="selected === 'Preview'">
-      <slot />
+    <div class="px-4 py-3 bg-gray-100" v-if="selected === 'Preview'">
+      <slot name="preview" />
     </div>
     <!-- code-block -->
     <div class="" v-if="selected === 'Code'">

@@ -12,6 +12,7 @@
 ## Default
 
 <Docs>
+<template #preview>
 <div class="accordion" id="accordionExample">
   <div class="accordion-item">
     <div class="accordion-header">
@@ -90,6 +91,7 @@
     </div>
   </div>
 </div>
+</template>
 <template #code>
 
 ```html
@@ -179,6 +181,7 @@
 ## Flush
 
 <Docs>
+<template #preview>
 <div class="accordion accordion-flush" id="accordionExample2">
   <div class="accordion-item">
     <div class="accordion-header">
@@ -257,6 +260,7 @@
     </div>
   </div>
 </div>
+</template>
 <template #code>
 
 ```html

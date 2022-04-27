@@ -12,6 +12,7 @@
 ## Variants
 
 <Docs>
+<template #preview>
 <div class="space-y-2">
   <div class="alert alert-default">
     <svg
@@ -238,6 +239,7 @@
     </button>
   </div>
 </div>
+</template>
 <template #code>
 
 ```html
@@ -303,6 +305,7 @@
 ## Dense
 
 <Docs>
+<template #preview>
 <div class="space-y-2">
 <div class="alert alert-dense alert-default">
   <svg
@@ -529,6 +532,7 @@
   </button>
   </div>
 </div>
+</template>
 <template #code>
 
 ```html
@@ -594,6 +598,7 @@
 ## Outlined
 
 <Docs>
+<template #preview>
 <div class="space-y-2">
   <div class="alert alert-outlined alert-default">
     <svg
@@ -820,6 +825,7 @@
     </button>
   </div>
 </div>
+</template>
 <template #code>
 
 ```html
@@ -884,10 +890,11 @@
 
 ## Border
 
-To add border accent, just use tailwind built-in border utilities like `border-t-4`, `border-l-4` and etc.
+To add border accent, just use tailwind built-in border utilities like `border-l-4 border-l-warning-500`.
 
 <docs>
-<div class="alert alert-outlined border-t-4 alert-warning">
+<template #preview>
+<div class="alert border-l-4 border-l-warning-500 alert-error">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     class="h-5 w-5"
@@ -919,10 +926,11 @@ To add border accent, just use tailwind built-in border utilities like `border-t
     </svg>
   </button>
 </div>
+</template>
 <template #code>
 
 ```html
-<div class="alert alert-outlined border-t-4 alert-warning">
+<div class="alert border-l-4 border-l-warning-500 alert-error">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     class="h-5 w-5"
@@ -962,6 +970,7 @@ To add border accent, just use tailwind built-in border utilities like `border-t
 ## Dismissable
 
 <Docs>
+<template #preview>
 <div
   class="alert alert-primary flex-row alert-dismissible fade show"
   role="alert"
@@ -993,6 +1002,7 @@ To add border accent, just use tailwind built-in border utilities like `border-t
     </svg>
   </button>
 </div>
+</template>
 <template #code>
 
 ```html
@@ -1035,6 +1045,7 @@ To add border accent, just use tailwind built-in border utilities like `border-t
 ## Buttons
 
 <Docs>
+<template #preview>
 <div>
   <div
     class="alert alert-outlined flex-row alert-dismissible fade show"
@@ -1050,6 +1061,7 @@ To add border accent, just use tailwind built-in border utilities like `border-t
     </div>
   </div>
 </div>
+</template>
 <template #code>
 
 ```html
