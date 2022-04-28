@@ -1,7 +1,7 @@
 @layer components {
   /* card */
   .card {
-    @apply rounded-md shadow flex flex-col;
+    @apply rounded-md shadow flex flex-col bg-white;
   }
 
   .card-header {
