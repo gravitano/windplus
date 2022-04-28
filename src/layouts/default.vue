@@ -15,8 +15,10 @@ const route = useRoute();
 
 watch(
   route,
-  (val) => {
-    sidebar.value = false;
+  () => {
+    if (window.innerWidth < 600) {
+      sidebar.value = false;
+    }
   },
   { deep: true }
 );
