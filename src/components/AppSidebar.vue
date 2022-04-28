@@ -126,7 +126,7 @@ menus.value.sort((a, b) => {
   return 0;
 });
 
-const { isOpen } = useMenu(props, emit);
+const { isOpen, toggle } = useMenu(props, emit);
 </script>
 
 <template>

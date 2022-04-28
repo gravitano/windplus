@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { ref, computed, watch } from 'vue';
 import AppHeader from '../components/AppHeader.vue';
 import AppFooter from '../components/AppFooter.vue';
 import AppSidebar from '../components/AppSidebar.vue';
@@ -11,6 +11,15 @@ const props = defineProps({
 
 const sidebar = ref(false);
 const activeHref = ref('');
+const route = useRoute();
+
+watch(
+  route,
+  (val) => {
+    sidebar.value = false;
+  },
+  { deep: true }
+);
 
 const scrollTo = (menu) => {
   document.querySelector(menu.href)?.scrollIntoView({
@@ -19,7 +28,6 @@ const scrollTo = (menu) => {
   activeHref.value = menu.href;
 };
 
-const route = useRoute();
 const isHomePage = computed(() => route.name === 'index');
 </script>
 

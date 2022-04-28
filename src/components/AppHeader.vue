@@ -24,7 +24,7 @@ const menus = ref([
 
 const openSidebar = () => emit('menu:click');
 
-const { isOpen } = useMenu(props, emit);
+const { isOpen, toggle } = useMenu(props, emit);
 </script>
 
 <template>
