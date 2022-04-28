@@ -17,84 +17,98 @@ const emit = defineEmits(['update:modelValue']);
 
 const menus = ref([
   {
-    title: 'Alerts',
-    path: '/alerts/',
+    text: 'Getting Started',
+    children: [
+      {
+        title: 'Installation',
+        path: '/installation/',
+      },
+    ],
   },
   {
-    title: 'Buttons',
-    path: '/buttons/',
-  },
-  {
-    title: 'Cards',
-    path: '/cards/',
-  },
-  {
-    title: 'Forms',
-    path: '/forms/',
-  },
-  {
-    title: 'List Group',
-    path: '/list-group/',
-  },
-  {
-    title: 'Timelines',
-    path: '/timelines/',
-  },
-  {
-    title: 'Navs',
-    path: '/navs/',
-  },
-  {
-    title: 'Breadcrumb',
-    path: '/breadcrumb/',
-  },
-  {
-    title: 'Accordion',
-    path: '/accordions/',
-  },
-  {
-    title: 'Dropdowns',
-    path: '/dropdowns/',
-  },
-  {
-    title: 'Badges',
-    path: '/badges/',
-  },
-  {
-    title: 'Button Group',
-    path: '/button-group/',
-  },
-  {
-    title: 'Modal',
-    path: '/modal/',
-  },
-  {
-    title: 'Navbar',
-    path: '/navbar/',
-  },
-  {
-    title: 'Table',
-    path: '/table/',
-  },
-  {
-    title: 'Navigation Drawer',
-    path: '/nav-drawer/',
-  },
-  {
-    title: 'Input Group',
-    path: '/input-group/',
-  },
-  {
-    title: 'Tooltips',
-    path: '/tooltips/',
-  },
-  {
-    title: 'Toasts',
-    path: '/toasts/',
-  },
-  {
-    title: 'Popovers',
-    path: '/popovers/',
+    text: 'Components',
+    children: [
+      {
+        title: 'Alerts',
+        path: '/alerts/',
+      },
+      {
+        title: 'Buttons',
+        path: '/buttons/',
+      },
+      {
+        title: 'Cards',
+        path: '/cards/',
+      },
+      {
+        title: 'Forms',
+        path: '/forms/',
+      },
+      {
+        title: 'List Group',
+        path: '/list-group/',
+      },
+      {
+        title: 'Timelines',
+        path: '/timelines/',
+      },
+      {
+        title: 'Navs',
+        path: '/navs/',
+      },
+      {
+        title: 'Breadcrumb',
+        path: '/breadcrumb/',
+      },
+      {
+        title: 'Accordion',
+        path: '/accordions/',
+      },
+      {
+        title: 'Dropdowns',
+        path: '/dropdowns/',
+      },
+      {
+        title: 'Badges',
+        path: '/badges/',
+      },
+      {
+        title: 'Button Group',
+        path: '/button-group/',
+      },
+      {
+        title: 'Modal',
+        path: '/modal/',
+      },
+      {
+        title: 'Navbar',
+        path: '/navbar/',
+      },
+      {
+        title: 'Table',
+        path: '/table/',
+      },
+      {
+        title: 'Navigation Drawer',
+        path: '/nav-drawer/',
+      },
+      {
+        title: 'Input Group',
+        path: '/input-group/',
+      },
+      {
+        title: 'Tooltips',
+        path: '/tooltips/',
+      },
+      {
+        title: 'Toasts',
+        path: '/toasts/',
+      },
+      {
+        title: 'Popovers',
+        path: '/popovers/',
+      },
+    ],
   },
 ]);
 
@@ -141,36 +155,38 @@ const { isOpen } = useMenu(props, emit);
     </div>
 
     <div class="px-4 sm:px-0">
-      <button class="list-header text-xs uppercase mb-1">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M19 9l-7 7-7-7"
-          />
-        </svg>
-        Components
-      </button>
-      <ul
-        class="list-group list-dense list-hover list-group-sm list-inline list-tree ml-2"
-      >
-        <li v-for="menu in menus" :key="menu.title">
-          <router-link
-            :to="menu.path"
-            class="list-group-item"
-            :class="activeClass(menu.path)"
+      <div v-for="menu in menus" :key="menu.text" class="mb-5">
+        <button class="list-header text-xs uppercase mb-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 hidden"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
           >
-            {{ menu.title }}
-          </router-link>
-        </li>
-      </ul>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+          {{ menu.text }}
+        </button>
+        <ul
+          class="list-group list-dense list-hover list-group-sm list-inline list-tree"
+        >
+          <li v-for="child in menu.children" :key="child.title">
+            <router-link
+              :to="child.path"
+              class="list-group-item"
+              :class="activeClass(child.path)"
+            >
+              {{ child.title }}
+            </router-link>
+          </li>
+        </ul>
+      </div>
     </div>
   </aside>
 </template>
