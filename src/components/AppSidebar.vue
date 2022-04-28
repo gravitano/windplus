@@ -20,6 +20,10 @@ const menus = ref([
     text: 'Getting Started',
     children: [
       {
+        title: 'About',
+        path: '/about/',
+      },
+      {
         title: 'Installation',
         path: '/installation/',
       },

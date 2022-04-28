@@ -1,11 +1,20 @@
 ---
-title: My Cool App
+title: About WindPlus
 meta:
   - name: description
-    content: Hello World
-name: My Cool App
+    content: About WindPlus
 ---
 
-# Hello World
+# What is WindPlus?
 
-This is {{frontmatter.name}}
+WindPlus is collection of Tailwind component.
+
+## Features
+
+- 🛠 Rich Components
+- 🔥 Framework Agnostic
+- ⚡️ Develop Faster
+
+## Status
+
+This project is under heavy development and is not ready for production.
