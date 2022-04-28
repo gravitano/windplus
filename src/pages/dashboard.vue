@@ -1,7 +1,458 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div></div>
+  <!-- navbar -->
+  <div class="navbar border-b">
+    <button class="btn btn-default btn-text btn-icon inline-flex sm:!hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16"
+        />
+      </svg>
+    </button>
+
+    <a href="#" class="navbar-brand w-[260px]">Dashboard</a>
+
+    <div class="input-group input-group-inner">
+      <input
+        type="search"
+        class="form-control pr-10"
+        placeholder="Search"
+        aria-label="Search"
+        aria-describedby="basic-addon1"
+      />
+      <button class="input-group-text text-gray-500" id="basic-addon1">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <!-- <div class="nav">
+        <a href="#" class="nav-item active">Home</a>
+        <a href="#" class="nav-item">Setting</a>
+      </div> -->
+    <div class="flex-grow"></div>
+
+    <div class="dropdown">
+      <button
+        class="btn btn-text btn-icon"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+        id="dLabel"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+          />
+        </svg>
+        <span class="sr-only">Account</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel">
+        <li><a href="javascript:void(0)" class="dropdown-item">Profile</a></li>
+        <li><a href="javascript:void(0)" class="dropdown-item">Setting</a></li>
+        <li>
+          <div class="dropdown-divider"></div>
+        </li>
+        <li><router-link to="/" class="dropdown-item">Logout</router-link></li>
+      </ul>
+    </div>
+  </div>
+  <!-- ./navbar -->
+
+  <!-- main -->
+  <main class="flex">
+    <!-- nav drawer -->
+    <div class="nav-drawer nav-drawer-screen border-r shadow flex-shrink-0">
+      <!-- list -->
+      <div class="list list-hover flex-grow">
+        <div class="px-2 py-1 nav-drawer-header sm:hidden">
+          <div class="nav-drawer-mini-brand">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </div>
+          <div class="nav-drawer-title">Application</div>
+          <div class="nav-drawer-subtitle">SubText</div>
+        </div>
+        <div class="border-b my-1 -mx-2 sm:hidden"></div>
+        <div class="list-header text-xs py-1 uppercase pl-3">Main Menu</div>
+        <!-- list item -->
+        <a href="#" class="list-group-item gap-4">
+          <div class="list-group-item-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
+          </div>
+          <div class="list-group-item-content">
+            <div class="list-group-item-subtitle">Dashboard</div>
+          </div>
+        </a>
+        <!-- ./list item -->
+        <!-- list item -->
+        <a
+          class="list-group-item gap-4"
+          data-bs-toggle="collapse"
+          href="#collapseTeam"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseTeam"
+        >
+          <div class="list-group-item-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+              />
+            </svg>
+          </div>
+          <div class="list-group-item-content">
+            <div class="list-group-item-subtitle">Team</div>
+          </div>
+          <div class="list-group-item-action text-gray-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </div>
+        </a>
+        <!-- ./list item -->
+        <!-- child list -->
+        <div class="list list-child collapse" id="collapseTeam">
+          <!-- list item -->
+          <a href="#" class="list-group-item gap-4">
+            <div class="list-group-item-icon">
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg> -->
+            </div>
+            <div class="list-group-item-content">
+              <div class="list-group-item-subtitle">Add New Team</div>
+            </div>
+          </a>
+          <!-- ./list item -->
+          <!-- list item -->
+          <a href="#" class="list-group-item gap-4">
+            <div class="list-group-item-icon">
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg> -->
+            </div>
+            <div class="list-group-item-content">
+              <div class="list-group-item-subtitle">Team Group</div>
+            </div>
+          </a>
+          <!-- ./list item -->
+        </div>
+        <!-- ./child list -->
+        <!-- list item -->
+        <a
+          data-bs-toggle="collapse"
+          href="#collapseProjects"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseProjects"
+          class="list-group-item gap-4"
+        >
+          <div class="list-group-item-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+              />
+            </svg>
+          </div>
+          <div class="list-group-item-content">
+            <div class="list-group-item-subtitle">Projects</div>
+          </div>
+          <div class="list-group-item-action text-gray-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </div>
+        </a>
+        <!-- ./list item -->
+        <!-- child list -->
+        <div class="list list-child collapse" id="collapseProjects">
+          <!-- list item -->
+          <a href="#" class="list-group-item gap-4">
+            <div class="list-group-item-icon">
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg> -->
+            </div>
+            <div class="list-group-item-content">
+              <div class="list-group-item-subtitle">Add New Project</div>
+            </div>
+          </a>
+          <!-- ./list item -->
+          <!-- list item -->
+          <a href="#" class="list-group-item gap-4">
+            <div class="list-group-item-icon">
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg> -->
+            </div>
+            <div class="list-group-item-content">
+              <div class="list-group-item-subtitle">Favorite</div>
+            </div>
+          </a>
+          <!-- ./list item -->
+        </div>
+        <!-- ./child list -->
+        <!-- list item -->
+        <a href="#" class="list-group-item gap-4">
+          <div class="list-group-item-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+              />
+            </svg>
+          </div>
+          <div class="list-group-item-content">
+            <div class="list-group-item-subtitle">Calendar</div>
+          </div>
+        </a>
+        <!-- ./list item -->
+        <!-- list item -->
+        <a href="#" class="list-group-item gap-4">
+          <div class="list-group-item-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+              />
+            </svg>
+          </div>
+          <div class="list-group-item-content">
+            <div class="list-group-item-subtitle">Documents</div>
+          </div>
+        </a>
+        <!-- ./list item -->
+        <!-- list item -->
+        <a href="#" class="list-group-item gap-4">
+          <div class="list-group-item-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+              />
+            </svg>
+          </div>
+          <div class="list-group-item-content">
+            <div class="list-group-item-subtitle">Reports</div>
+          </div>
+        </a>
+        <!-- ./list item -->
+      </div>
+      <!-- ./list -->
+      <div class="nav-drawer-append">
+        <router-link to="/" class="btn btn-error btn-block">Logout</router-link>
+      </div>
+    </div>
+    <!-- ./nav drawer -->
+
+    <!-- main content -->
+    <div class="px-4 py-2">
+      <div class="mb-4">
+        <h1 class="font-semibold mb-1 text-gray-800 text-xl">Dashboard</h1>
+        <!-- <p class="text-gray-500 text-lg">Overview</p> -->
+
+        <div class="breadcrumb">
+          <a class="breadcrumb-item" href="javascript:void(0);"> Home </a>
+          <span class="breadcrumb-divider">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </span>
+          <a class="breadcrumb-item active" href="javascript:void(0);">
+            Dashboard
+          </a>
+        </div>
+      </div>
+
+      <div class="alert alert-warning mb-5">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        Please review your changes!
+        <div class="flex-grow"></div>
+        <button class="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="card card-bordered">
+        <div class="card-header">What's Changed?</div>
+        <div class="card-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A deleniti
+          nostrum aliquam distinctio placeat provident sequi mollitia iure
+          incidunt expedita laboriosam, veritatis id, voluptatem neque ducimus
+          quos eligendi cupiditate? Illum.
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ./main -->
 </template>
 
 <style scoped></style>
+
+<route lang="yaml">
+meta:
+  layout: blank
+</route>
