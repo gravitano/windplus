@@ -6,7 +6,7 @@
   }
 
   .btn-default {
-    @apply border-gray-500 text-gray-700 hover:bg-gray-700 hover:border-gray-700 hover:text-white;
+    @apply border-gray-500 text-gray-700 bg-white hover:bg-gray-700 hover:border-gray-700 hover:text-white;
   }
 
   .btn-primary {
