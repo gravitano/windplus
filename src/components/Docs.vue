@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
+defineProps<{
+  previewClass?: string;
+}>();
+
 const selected = ref('Preview');
 const tabs = ['Preview', 'Code'];
 </script>
@@ -18,7 +22,11 @@ const tabs = ['Preview', 'Code'];
         {{ tab }}
       </button>
     </div>
-    <div class="px-4 py-3 bg-gray-100" v-if="selected === 'Preview'">
+    <div
+      class="px-4 py-3 bg-gray-100"
+      :class="previewClass"
+      v-if="selected === 'Preview'"
+    >
       <slot name="preview" />
     </div>
     <!-- code-block -->
