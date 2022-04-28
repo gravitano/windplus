@@ -4,7 +4,7 @@
   }
 
   .navbar-brand {
-    @apply font-semibold;
+    @apply font-semibold no-underline;
   }
 
   .navbar-light {
