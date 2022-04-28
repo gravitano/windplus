@@ -2,8 +2,12 @@
   .input-group {
     @apply flex items-center relative;
 
+    .btn {
+      @apply py-1.5;
+    }
+
     .input-group-text {
-      @apply px-4 py-2 bg-gray-100 border -mx-[1px] border-gray-300;
+      @apply px-4 py-1.5 bg-gray-100 border -mx-[1px] border-gray-300;
 
       &:first-child {
         @apply rounded-l-md;
