@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/gravitano/vite-tailwind-vanilla/compare/v0.0.1...v0.0.2) (2022-05-18)
+
+
+### Features
+
+* **button:** set default button bg ([e0b7465](https://github.com/gravitano/vite-tailwind-vanilla/commit/e0b746539826908e460fd54bab20b1a322d7108c))
+* **cards:** set card default bg ([1dc6cf3](https://github.com/gravitano/vite-tailwind-vanilla/commit/1dc6cf348424eaacdc58a8de8542aae9cbd6ef70))
+* dashboard ([2ac6a7d](https://github.com/gravitano/vite-tailwind-vanilla/commit/2ac6a7da482117b8f4c3e6f4818c5871cc78d9b6))
+* dashboard dark example ([096d539](https://github.com/gravitano/vite-tailwind-vanilla/commit/096d5397a1979ed22413c326f363d2979b38acf9))
+* multi level menus ([d7f3a46](https://github.com/gravitano/vite-tailwind-vanilla/commit/d7f3a4650f392d1f2a7c002d1ad93a411c11b24b))
+* new `Docs` component & add unplugin-components ([5f3b8a4](https://github.com/gravitano/vite-tailwind-vanilla/commit/5f3b8a4505425415b1af39decd448d3ecdda0a5a))
+
+
+### Bug Fixes
+
+* base layout ([cc06af1](https://github.com/gravitano/vite-tailwind-vanilla/commit/cc06af134523497dd083507d3c0eed59a87d7599))
+* **dropdown:** fix list item style on prose container ([caa56b2](https://github.com/gravitano/vite-tailwind-vanilla/commit/caa56b24ae5b414f0645d39eab7aba9868cf1140))
+* **input-group:** fix padding ([be6be31](https://github.com/gravitano/vite-tailwind-vanilla/commit/be6be3111e1e4533fca92601a7e12e94111569b9))
+
 ### 0.0.1 (2022-04-25)
 
 
