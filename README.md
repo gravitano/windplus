@@ -25,12 +25,7 @@ Import `windplus/styles/main.css` into your tailwind main styles. E.g. on your `
 - @tailwind components;
 - @tailwind utilities;
 
-+@import 'tailwindcss/base';
-+@import 'tailwindcss/components';
-
 +@import 'windplus/styles/main';
-
-+@import 'tailwindcss/utilities';
 ```
 
 Extend tailwind config like so:
@@ -66,7 +61,13 @@ Start using the classes:
 
 ```html
 <button class="btn btn-primary">Click Me</button>
+
+<div class="alert alert-primary">Alert text</div>
 ```
+
+## Documentation
+
+Documentation is located [here](https://windplus.vercel.app/).
 
 ## Development
 
